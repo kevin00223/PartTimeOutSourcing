@@ -34,6 +34,12 @@
     UIImage *alignedImage = [[UIImage imageNamed:@"back"] imageWithAlignmentRectInsets:insets];
     [[UINavigationBar appearance] setBackIndicatorImage:alignedImage];
     [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:alignedImage];
+    
+    // 统一设置字体大小颜色
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[NSFontAttributeName] = [UIFont fontWithName:@"PingFangSC-Regular" size: 16];
+    dict[NSForegroundColorAttributeName] = [UIColor blackColor];
+    [self.navigationBar setTitleTextAttributes:dict];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {

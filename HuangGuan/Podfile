@@ -3,5 +3,6 @@ platform :ios, '9.0'
 target 'HuangGuan' do
 
 pod 'Masonry'
+pod 'MJExtension'
 
 end

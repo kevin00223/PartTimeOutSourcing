@@ -21,6 +21,15 @@
 		A2DA03D1230BA20100491721 /* HGOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03D0230BA20100491721 /* HGOrdersViewController.m */; };
 		A2DA03D4230BA20C00491721 /* HGShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03D3230BA20C00491721 /* HGShoppingCartViewController.m */; };
 		A2DA03D7230BA21500491721 /* HGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03D6230BA21500491721 /* HGMainViewController.m */; };
+		A2DA03DA230BCD4500491721 /* UIImage+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03D9230BCD4500491721 /* UIImage+GradientColor.m */; };
+		A2DA03DD230BE9EA00491721 /* HGMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03DC230BE9EA00491721 /* HGMineCell.m */; };
+		A2DA03DF230BF1E400491721 /* MineCell.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2DA03DE230BF1E400491721 /* MineCell.plist */; };
+		A2DA03E2230BF33F00491721 /* HGMineCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03E1230BF33F00491721 /* HGMineCellModel.m */; };
+		A2DA03E5230BF77A00491721 /* HGFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03E4230BF77A00491721 /* HGFeedBackViewController.m */; };
+		A2DA03E8230BFDAE00491721 /* HGSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03E7230BFDAE00491721 /* HGSettingViewController.m */; };
+		A2DA03EB230BFEC400491721 /* HGMineSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03EA230BFEC400491721 /* HGMineSettingCell.m */; };
+		A2DA03F2230C0B0C00491721 /* SAChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03F0230C0B0C00491721 /* SAChangePwdViewController.m */; };
+		A2DA03F3230C0B0C00491721 /* SAChangePwd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA03F1230C0B0C00491721 /* SAChangePwd.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +62,22 @@
 		A2DA03D3230BA20C00491721 /* HGShoppingCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGShoppingCartViewController.m; sourceTree = "<group>"; };
 		A2DA03D5230BA21500491721 /* HGMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMainViewController.h; sourceTree = "<group>"; };
 		A2DA03D6230BA21500491721 /* HGMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMainViewController.m; sourceTree = "<group>"; };
+		A2DA03D8230BCD4500491721 /* UIImage+GradientColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GradientColor.h"; sourceTree = "<group>"; };
+		A2DA03D9230BCD4500491721 /* UIImage+GradientColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GradientColor.m"; sourceTree = "<group>"; };
+		A2DA03DB230BE9EA00491721 /* HGMineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMineCell.h; sourceTree = "<group>"; };
+		A2DA03DC230BE9EA00491721 /* HGMineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMineCell.m; sourceTree = "<group>"; };
+		A2DA03DE230BF1E400491721 /* MineCell.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MineCell.plist; sourceTree = "<group>"; };
+		A2DA03E0230BF33F00491721 /* HGMineCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMineCellModel.h; sourceTree = "<group>"; };
+		A2DA03E1230BF33F00491721 /* HGMineCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMineCellModel.m; sourceTree = "<group>"; };
+		A2DA03E3230BF77A00491721 /* HGFeedBackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGFeedBackViewController.h; sourceTree = "<group>"; };
+		A2DA03E4230BF77A00491721 /* HGFeedBackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGFeedBackViewController.m; sourceTree = "<group>"; };
+		A2DA03E6230BFDAE00491721 /* HGSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGSettingViewController.h; sourceTree = "<group>"; };
+		A2DA03E7230BFDAE00491721 /* HGSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGSettingViewController.m; sourceTree = "<group>"; };
+		A2DA03E9230BFEC400491721 /* HGMineSettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMineSettingCell.h; sourceTree = "<group>"; };
+		A2DA03EA230BFEC400491721 /* HGMineSettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMineSettingCell.m; sourceTree = "<group>"; };
+		A2DA03EF230C0B0C00491721 /* SAChangePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAChangePwdViewController.h; sourceTree = "<group>"; };
+		A2DA03F0230C0B0C00491721 /* SAChangePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAChangePwdViewController.m; sourceTree = "<group>"; };
+		A2DA03F1230C0B0C00491721 /* SAChangePwd.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SAChangePwd.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +187,8 @@
 		A2DA03B9230B973200491721 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A2DA03D8230BCD4500491721 /* UIImage+GradientColor.h */,
+				A2DA03D9230BCD4500491721 /* UIImage+GradientColor.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -209,6 +236,20 @@
 			children = (
 				A2DA03CC230BA1F700491721 /* HGMineViewController.h */,
 				A2DA03CD230BA1F700491721 /* HGMineViewController.m */,
+				A2DA03DB230BE9EA00491721 /* HGMineCell.h */,
+				A2DA03DC230BE9EA00491721 /* HGMineCell.m */,
+				A2DA03DE230BF1E400491721 /* MineCell.plist */,
+				A2DA03E0230BF33F00491721 /* HGMineCellModel.h */,
+				A2DA03E1230BF33F00491721 /* HGMineCellModel.m */,
+				A2DA03E3230BF77A00491721 /* HGFeedBackViewController.h */,
+				A2DA03E4230BF77A00491721 /* HGFeedBackViewController.m */,
+				A2DA03E6230BFDAE00491721 /* HGSettingViewController.h */,
+				A2DA03E7230BFDAE00491721 /* HGSettingViewController.m */,
+				A2DA03E9230BFEC400491721 /* HGMineSettingCell.h */,
+				A2DA03EA230BFEC400491721 /* HGMineSettingCell.m */,
+				A2DA03F1230C0B0C00491721 /* SAChangePwd.storyboard */,
+				A2DA03EF230C0B0C00491721 /* SAChangePwdViewController.h */,
+				A2DA03F0230C0B0C00491721 /* SAChangePwdViewController.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -290,6 +331,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2DA03A9230B8EB500491721 /* LaunchScreen.storyboard in Resources */,
+				A2DA03DF230BF1E400491721 /* MineCell.plist in Resources */,
+				A2DA03F3230C0B0C00491721 /* SAChangePwd.storyboard in Resources */,
 				A2DA03A6230B8EB500491721 /* Assets.xcassets in Resources */,
 				A2DA03A4230B8EB300491721 /* Main.storyboard in Resources */,
 			);
@@ -327,16 +370,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DA03DA230BCD4500491721 /* UIImage+GradientColor.m in Sources */,
 				A2DA03D1230BA20100491721 /* HGOrdersViewController.m in Sources */,
 				A2DA03A1230B8EB300491721 /* ViewController.m in Sources */,
 				A2DA03CE230BA1F700491721 /* HGMineViewController.m in Sources */,
+				A2DA03EB230BFEC400491721 /* HGMineSettingCell.m in Sources */,
+				A2DA03E5230BF77A00491721 /* HGFeedBackViewController.m in Sources */,
 				A2DA03C0230B97E300491721 /* HGTabBarController.m in Sources */,
 				A2DA03AC230B8EB600491721 /* main.m in Sources */,
 				A2DA03BD230B97C900491721 /* HGNavigationController.m in Sources */,
+				A2DA03DD230BE9EA00491721 /* HGMineCell.m in Sources */,
 				A2DA03D7230BA21500491721 /* HGMainViewController.m in Sources */,
+				A2DA03E8230BFDAE00491721 /* HGSettingViewController.m in Sources */,
 				A2DA03CA230B9FDB00491721 /* HGBaseViewController.m in Sources */,
+				A2DA03E2230BF33F00491721 /* HGMineCellModel.m in Sources */,
 				A2DA03D4230BA20C00491721 /* HGShoppingCartViewController.m in Sources */,
 				A2DA039E230B8EB300491721 /* AppDelegate.m in Sources */,
+				A2DA03F2230C0B0C00491721 /* SAChangePwdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
