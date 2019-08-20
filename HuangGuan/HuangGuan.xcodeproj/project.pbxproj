@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84AB4813AA9E8212B9B4EF47 /* libPods-HuangGuan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A0E092F9C20DEDCC909AB7 /* libPods-HuangGuan.a */; };
 		A2DA039E230B8EB300491721 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA039D230B8EB300491721 /* AppDelegate.m */; };
 		A2DA03A1230B8EB300491721 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03A0230B8EB300491721 /* ViewController.m */; };
 		A2DA03A4230B8EB300491721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA03A2230B8EB300491721 /* Main.storyboard */; };
 		A2DA03A6230B8EB500491721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DA03A5230B8EB500491721 /* Assets.xcassets */; };
 		A2DA03A9230B8EB500491721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA03A7230B8EB500491721 /* LaunchScreen.storyboard */; };
 		A2DA03AC230B8EB600491721 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03AB230B8EB600491721 /* main.m */; };
+		A2DA03BD230B97C900491721 /* HGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03BC230B97C900491721 /* HGNavigationController.m */; };
+		A2DA03C0230B97E300491721 /* HGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03BF230B97E300491721 /* HGTabBarController.m */; };
+		A2DA03CA230B9FDB00491721 /* HGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03C9230B9FDB00491721 /* HGBaseViewController.m */; };
+		A2DA03CE230BA1F700491721 /* HGMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03CD230BA1F700491721 /* HGMineViewController.m */; };
+		A2DA03D1230BA20100491721 /* HGOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03D0230BA20100491721 /* HGOrdersViewController.m */; };
+		A2DA03D4230BA20C00491721 /* HGShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03D3230BA20C00491721 /* HGShoppingCartViewController.m */; };
+		A2DA03D7230BA21500491721 /* HGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03D6230BA21500491721 /* HGMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19A0E092F9C20DEDCC909AB7 /* libPods-HuangGuan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HuangGuan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5935E396E0B40CA6BF87D49A /* Pods-HuangGuan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuangGuan.debug.xcconfig"; path = "Target Support Files/Pods-HuangGuan/Pods-HuangGuan.debug.xcconfig"; sourceTree = "<group>"; };
+		99AA282045AB15149CFEBBA0 /* Pods-HuangGuan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuangGuan.release.xcconfig"; path = "Target Support Files/Pods-HuangGuan/Pods-HuangGuan.release.xcconfig"; sourceTree = "<group>"; };
 		A2DA0399230B8EB300491721 /* HuangGuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuangGuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA039C230B8EB300491721 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2DA039D230B8EB300491721 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +37,22 @@
 		A2DA03A8230B8EB500491721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2DA03AA230B8EB600491721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2DA03AB230B8EB600491721 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2DA03BB230B97C900491721 /* HGNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGNavigationController.h; sourceTree = "<group>"; };
+		A2DA03BC230B97C900491721 /* HGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGNavigationController.m; sourceTree = "<group>"; };
+		A2DA03BE230B97E300491721 /* HGTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGTabBarController.h; sourceTree = "<group>"; };
+		A2DA03BF230B97E300491721 /* HGTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGTabBarController.m; sourceTree = "<group>"; };
+		A2DA03C7230B9C7900491721 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A2DA03C8230B9FDB00491721 /* HGBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGBaseViewController.h; sourceTree = "<group>"; };
+		A2DA03C9230B9FDB00491721 /* HGBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGBaseViewController.m; sourceTree = "<group>"; };
+		A2DA03CB230BA01900491721 /* HGConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGConst.h; sourceTree = "<group>"; };
+		A2DA03CC230BA1F700491721 /* HGMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMineViewController.h; sourceTree = "<group>"; };
+		A2DA03CD230BA1F700491721 /* HGMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMineViewController.m; sourceTree = "<group>"; };
+		A2DA03CF230BA20100491721 /* HGOrdersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGOrdersViewController.h; sourceTree = "<group>"; };
+		A2DA03D0230BA20100491721 /* HGOrdersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGOrdersViewController.m; sourceTree = "<group>"; };
+		A2DA03D2230BA20C00491721 /* HGShoppingCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGShoppingCartViewController.h; sourceTree = "<group>"; };
+		A2DA03D3230BA20C00491721 /* HGShoppingCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGShoppingCartViewController.m; sourceTree = "<group>"; };
+		A2DA03D5230BA21500491721 /* HGMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMainViewController.h; sourceTree = "<group>"; };
+		A2DA03D6230BA21500491721 /* HGMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AB4813AA9E8212B9B4EF47 /* libPods-HuangGuan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +72,8 @@
 			children = (
 				A2DA039B230B8EB300491721 /* HuangGuan */,
 				A2DA039A230B8EB300491721 /* Products */,
+				E02A77FF10230D0CDEDC3ADE /* Pods */,
+				C1C4A67037F20BE1986DCE69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +88,10 @@
 		A2DA039B230B8EB300491721 /* HuangGuan */ = {
 			isa = PBXGroup;
 			children = (
-				A2DA039C230B8EB300491721 /* AppDelegate.h */,
-				A2DA039D230B8EB300491721 /* AppDelegate.m */,
+				A2DA03BA230B977100491721 /* Modules */,
+				A2DA03B5230B970700491721 /* Base */,
+				A2DA03B3230B967C00491721 /* Other */,
+				A2DA03B2230B966600491721 /* Service */,
 				A2DA039F230B8EB300491721 /* ViewController.h */,
 				A2DA03A0230B8EB300491721 /* ViewController.m */,
 				A2DA03A2230B8EB300491721 /* Main.storyboard */,
@@ -71,6 +103,133 @@
 			path = HuangGuan;
 			sourceTree = "<group>";
 		};
+		A2DA03B2230B966600491721 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA039C230B8EB300491721 /* AppDelegate.h */,
+				A2DA039D230B8EB300491721 /* AppDelegate.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A2DA03B3230B967C00491721 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA03C7230B9C7900491721 /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		A2DA03B5230B970700491721 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA03B9230B973200491721 /* Utilities */,
+				A2DA03B8230B972C00491721 /* Const */,
+				A2DA03B7230B971F00491721 /* Share */,
+				A2DA03B6230B971500491721 /* Category */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A2DA03B6230B971500491721 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A2DA03B7230B971F00491721 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA03BB230B97C900491721 /* HGNavigationController.h */,
+				A2DA03BC230B97C900491721 /* HGNavigationController.m */,
+				A2DA03BE230B97E300491721 /* HGTabBarController.h */,
+				A2DA03BF230B97E300491721 /* HGTabBarController.m */,
+				A2DA03C8230B9FDB00491721 /* HGBaseViewController.h */,
+				A2DA03C9230B9FDB00491721 /* HGBaseViewController.m */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		A2DA03B8230B972C00491721 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA03CB230BA01900491721 /* HGConst.h */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		A2DA03B9230B973200491721 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A2DA03BA230B977100491721 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA03C4230B982E00491721 /* Mine */,
+				A2DA03C3230B982300491721 /* Orders */,
+				A2DA03C2230B980B00491721 /* ShoppingCart */,
+				A2DA03C1230B980100491721 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A2DA03C1230B980100491721 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA03D5230BA21500491721 /* HGMainViewController.h */,
+				A2DA03D6230BA21500491721 /* HGMainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A2DA03C2230B980B00491721 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA03D2230BA20C00491721 /* HGShoppingCartViewController.h */,
+				A2DA03D3230BA20C00491721 /* HGShoppingCartViewController.m */,
+			);
+			path = ShoppingCart;
+			sourceTree = "<group>";
+		};
+		A2DA03C3230B982300491721 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA03CF230BA20100491721 /* HGOrdersViewController.h */,
+				A2DA03D0230BA20100491721 /* HGOrdersViewController.m */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		A2DA03C4230B982E00491721 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA03CC230BA1F700491721 /* HGMineViewController.h */,
+				A2DA03CD230BA1F700491721 /* HGMineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		C1C4A67037F20BE1986DCE69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19A0E092F9C20DEDCC909AB7 /* libPods-HuangGuan.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E02A77FF10230D0CDEDC3ADE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5935E396E0B40CA6BF87D49A /* Pods-HuangGuan.debug.xcconfig */,
+				99AA282045AB15149CFEBBA0 /* Pods-HuangGuan.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2DA03AF230B8EB600491721 /* Build configuration list for PBXNativeTarget "HuangGuan" */;
 			buildPhases = (
+				88DFE56664D4A6554BD009B7 /* [CP] Check Pods Manifest.lock */,
 				A2DA0395230B8EB300491721 /* Sources */,
 				A2DA0396230B8EB300491721 /* Frameworks */,
 				A2DA0397230B8EB300491721 /* Resources */,
@@ -97,6 +257,7 @@
 		A2DA0391230B8EB300491721 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HG;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = LK;
 				TargetAttributes = {
@@ -136,13 +297,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88DFE56664D4A6554BD009B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuangGuan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2DA0395230B8EB300491721 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DA03D1230BA20100491721 /* HGOrdersViewController.m in Sources */,
 				A2DA03A1230B8EB300491721 /* ViewController.m in Sources */,
+				A2DA03CE230BA1F700491721 /* HGMineViewController.m in Sources */,
+				A2DA03C0230B97E300491721 /* HGTabBarController.m in Sources */,
 				A2DA03AC230B8EB600491721 /* main.m in Sources */,
+				A2DA03BD230B97C900491721 /* HGNavigationController.m in Sources */,
+				A2DA03D7230BA21500491721 /* HGMainViewController.m in Sources */,
+				A2DA03CA230B9FDB00491721 /* HGBaseViewController.m in Sources */,
+				A2DA03D4230BA20C00491721 /* HGShoppingCartViewController.m in Sources */,
 				A2DA039E230B8EB300491721 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,9 +476,12 @@
 		};
 		A2DA03B0230B8EB600491721 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5935E396E0B40CA6BF87D49A /* Pods-HuangGuan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/likai/PartTimeOutSourcing/HuangGuan/HuangGuan/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = HuangGuan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +495,12 @@
 		};
 		A2DA03B1230B8EB600491721 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99AA282045AB15149CFEBBA0 /* Pods-HuangGuan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/likai/PartTimeOutSourcing/HuangGuan/HuangGuan/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = HuangGuan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

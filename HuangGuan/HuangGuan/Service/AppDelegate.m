@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "HGNavigationController.h"
+#import "HGTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self networkRequest];
+    
+    self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+//    HGNavigationController *loginNav = [[HGNavigationController alloc]initWithRootViewController:[[SALoginViewController alloc] init]];
+    HGTabBarController *tabBarVC = [[HGTabBarController alloc]init];
+    
+//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//    NSString *studentNo = [userDefaults objectForKey:@"studentNo"];
+//    if (studentNo.length == 0) {
+//        [userDefaults setObject:@"160601" forKey:@"studentNo"];
+//        [userDefaults setObject:@"123123" forKey:@"password"];
+//
+//        self.window.rootViewController = loginNav;
+//    }else{
+//        self.window.rootViewController = tabBarVC;
+//    }
+    
+    self.window.rootViewController = tabBarVC;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+- (void)networkRequest {
+    
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com/"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request];
+    [dataTask resume];
 }
 
 
