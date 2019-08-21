@@ -20,6 +20,9 @@
 #define HGRedColor HGHexColor(0xEB5266)
 
 
+#define UserDefault [NSUserDefaults standardUserDefaults]
+
+
 /**
  iPhoneX
  */

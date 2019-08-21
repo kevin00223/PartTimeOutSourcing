@@ -30,6 +30,24 @@
 		A2DA03EB230BFEC400491721 /* HGMineSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03EA230BFEC400491721 /* HGMineSettingCell.m */; };
 		A2DA03F2230C0B0C00491721 /* SAChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03F0230C0B0C00491721 /* SAChangePwdViewController.m */; };
 		A2DA03F3230C0B0C00491721 /* SAChangePwd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA03F1230C0B0C00491721 /* SAChangePwd.storyboard */; };
+		A2DA03F9230CD89D00491721 /* HGMinePersonalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03F8230CD89D00491721 /* HGMinePersonalInfoViewController.m */; };
+		A2DA03FB230CD8B300491721 /* HGMinePersonalInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA03FA230CD8B300491721 /* HGMinePersonalInfo.storyboard */; };
+		A2DA03FE230CF2AA00491721 /* CustomizeEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03FD230CF2AA00491721 /* CustomizeEmptyView.m */; };
+		A2DA0401230CF36700491721 /* HGMineAddressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA0400230CF36700491721 /* HGMineAddressTableViewController.m */; };
+		A2DA0405230CF5FF00491721 /* UIBarButtonItem+CustomBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA0404230CF5FF00491721 /* UIBarButtonItem+CustomBarButtonItem.m */; };
+		A2DA040C230D138200491721 /* HGMineEditAddressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA040A230D138200491721 /* HGMineEditAddressTableViewController.m */; };
+		A2DA040F230D149800491721 /* HGMineEditAddress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA040E230D149800491721 /* HGMineEditAddress.storyboard */; };
+		A2DA0412230D1BC700491721 /* HGAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA0411230D1BC700491721 /* HGAddressModel.m */; };
+		A2DA0419230D2A3A00491721 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA0415230D2A3A00491721 /* MBProgressHUD.m */; };
+		A2DA041A230D2A3A00491721 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA0416230D2A3A00491721 /* MBProgressHUD+XMG.m */; };
+		A2DA041B230D2A3A00491721 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A2DA0418230D2A3A00491721 /* MBProgressHUD.bundle */; };
+		A2DA041E230D319400491721 /* JHUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA041C230D319400491721 /* JHUserDefaults.m */; };
+		A2DA0421230D33E900491721 /* UIViewController+Uitils.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA0420230D33E900491721 /* UIViewController+Uitils.m */; };
+		A2DA0425230D366F00491721 /* AddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA0423230D366F00491721 /* AddressTableViewCell.m */; };
+		A2DA0426230D366F00491721 /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2DA0424230D366F00491721 /* AddressTableViewCell.xib */; };
+		A2DA0429230D4B6700491721 /* HGAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA0428230D4B6700491721 /* HGAccountModel.m */; };
+		A2DA042D230D4F9A00491721 /* HGLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA042C230D4F9A00491721 /* HGLoginRegisterViewController.m */; };
+		A2DA042F230D4FAF00491721 /* HGLoginRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA042E230D4FAF00491721 /* HGLoginRegister.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +96,37 @@
 		A2DA03EF230C0B0C00491721 /* SAChangePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAChangePwdViewController.h; sourceTree = "<group>"; };
 		A2DA03F0230C0B0C00491721 /* SAChangePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAChangePwdViewController.m; sourceTree = "<group>"; };
 		A2DA03F1230C0B0C00491721 /* SAChangePwd.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SAChangePwd.storyboard; sourceTree = "<group>"; };
+		A2DA03F7230CD89D00491721 /* HGMinePersonalInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMinePersonalInfoViewController.h; sourceTree = "<group>"; };
+		A2DA03F8230CD89D00491721 /* HGMinePersonalInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMinePersonalInfoViewController.m; sourceTree = "<group>"; };
+		A2DA03FA230CD8B300491721 /* HGMinePersonalInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HGMinePersonalInfo.storyboard; sourceTree = "<group>"; };
+		A2DA03FC230CF2AA00491721 /* CustomizeEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizeEmptyView.h; sourceTree = "<group>"; };
+		A2DA03FD230CF2AA00491721 /* CustomizeEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizeEmptyView.m; sourceTree = "<group>"; };
+		A2DA03FF230CF36700491721 /* HGMineAddressTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMineAddressTableViewController.h; sourceTree = "<group>"; };
+		A2DA0400230CF36700491721 /* HGMineAddressTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMineAddressTableViewController.m; sourceTree = "<group>"; };
+		A2DA0403230CF5FF00491721 /* UIBarButtonItem+CustomBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CustomBarButtonItem.h"; sourceTree = "<group>"; };
+		A2DA0404230CF5FF00491721 /* UIBarButtonItem+CustomBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CustomBarButtonItem.m"; sourceTree = "<group>"; };
+		A2DA0409230D138200491721 /* HGMineEditAddressTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMineEditAddressTableViewController.h; sourceTree = "<group>"; };
+		A2DA040A230D138200491721 /* HGMineEditAddressTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMineEditAddressTableViewController.m; sourceTree = "<group>"; };
+		A2DA040E230D149800491721 /* HGMineEditAddress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HGMineEditAddress.storyboard; sourceTree = "<group>"; };
+		A2DA0410230D1BC700491721 /* HGAddressModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGAddressModel.h; sourceTree = "<group>"; };
+		A2DA0411230D1BC700491721 /* HGAddressModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGAddressModel.m; sourceTree = "<group>"; };
+		A2DA0414230D2A3A00491721 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		A2DA0415230D2A3A00491721 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A2DA0416230D2A3A00491721 /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
+		A2DA0417230D2A3A00491721 /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
+		A2DA0418230D2A3A00491721 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		A2DA041C230D319400491721 /* JHUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUserDefaults.m; sourceTree = "<group>"; };
+		A2DA041D230D319400491721 /* JHUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUserDefaults.h; sourceTree = "<group>"; };
+		A2DA041F230D33E900491721 /* UIViewController+Uitils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Uitils.h"; sourceTree = "<group>"; };
+		A2DA0420230D33E900491721 /* UIViewController+Uitils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Uitils.m"; sourceTree = "<group>"; };
+		A2DA0422230D366F00491721 /* AddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressTableViewCell.h; sourceTree = "<group>"; };
+		A2DA0423230D366F00491721 /* AddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressTableViewCell.m; sourceTree = "<group>"; };
+		A2DA0424230D366F00491721 /* AddressTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
+		A2DA0427230D4B6700491721 /* HGAccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGAccountModel.h; sourceTree = "<group>"; };
+		A2DA0428230D4B6700491721 /* HGAccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGAccountModel.m; sourceTree = "<group>"; };
+		A2DA042B230D4F9A00491721 /* HGLoginRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGLoginRegisterViewController.h; sourceTree = "<group>"; };
+		A2DA042C230D4F9A00491721 /* HGLoginRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGLoginRegisterViewController.m; sourceTree = "<group>"; };
+		A2DA042E230D4FAF00491721 /* HGLoginRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HGLoginRegister.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,8 +236,17 @@
 		A2DA03B9230B973200491721 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A2DA0413230D2A1900491721 /* MBProgressHUD */,
+				A2DA03FC230CF2AA00491721 /* CustomizeEmptyView.h */,
+				A2DA03FD230CF2AA00491721 /* CustomizeEmptyView.m */,
 				A2DA03D8230BCD4500491721 /* UIImage+GradientColor.h */,
 				A2DA03D9230BCD4500491721 /* UIImage+GradientColor.m */,
+				A2DA0403230CF5FF00491721 /* UIBarButtonItem+CustomBarButtonItem.h */,
+				A2DA0404230CF5FF00491721 /* UIBarButtonItem+CustomBarButtonItem.m */,
+				A2DA041D230D319400491721 /* JHUserDefaults.h */,
+				A2DA041C230D319400491721 /* JHUserDefaults.m */,
+				A2DA041F230D33E900491721 /* UIViewController+Uitils.h */,
+				A2DA0420230D33E900491721 /* UIViewController+Uitils.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -196,6 +254,7 @@
 		A2DA03BA230B977100491721 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A2DA042A230D4F7D00491721 /* Login */,
 				A2DA03C4230B982E00491721 /* Mine */,
 				A2DA03C3230B982300491721 /* Orders */,
 				A2DA03C2230B980B00491721 /* ShoppingCart */,
@@ -250,8 +309,45 @@
 				A2DA03F1230C0B0C00491721 /* SAChangePwd.storyboard */,
 				A2DA03EF230C0B0C00491721 /* SAChangePwdViewController.h */,
 				A2DA03F0230C0B0C00491721 /* SAChangePwdViewController.m */,
+				A2DA03F7230CD89D00491721 /* HGMinePersonalInfoViewController.h */,
+				A2DA03F8230CD89D00491721 /* HGMinePersonalInfoViewController.m */,
+				A2DA03FA230CD8B300491721 /* HGMinePersonalInfo.storyboard */,
+				A2DA03FF230CF36700491721 /* HGMineAddressTableViewController.h */,
+				A2DA0400230CF36700491721 /* HGMineAddressTableViewController.m */,
+				A2DA0409230D138200491721 /* HGMineEditAddressTableViewController.h */,
+				A2DA040A230D138200491721 /* HGMineEditAddressTableViewController.m */,
+				A2DA040E230D149800491721 /* HGMineEditAddress.storyboard */,
+				A2DA0410230D1BC700491721 /* HGAddressModel.h */,
+				A2DA0411230D1BC700491721 /* HGAddressModel.m */,
+				A2DA0422230D366F00491721 /* AddressTableViewCell.h */,
+				A2DA0423230D366F00491721 /* AddressTableViewCell.m */,
+				A2DA0424230D366F00491721 /* AddressTableViewCell.xib */,
+				A2DA0427230D4B6700491721 /* HGAccountModel.h */,
+				A2DA0428230D4B6700491721 /* HGAccountModel.m */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		A2DA0413230D2A1900491721 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA0418230D2A3A00491721 /* MBProgressHUD.bundle */,
+				A2DA0414230D2A3A00491721 /* MBProgressHUD.h */,
+				A2DA0415230D2A3A00491721 /* MBProgressHUD.m */,
+				A2DA0417230D2A3A00491721 /* MBProgressHUD+XMG.h */,
+				A2DA0416230D2A3A00491721 /* MBProgressHUD+XMG.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		A2DA042A230D4F7D00491721 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A2DA042B230D4F9A00491721 /* HGLoginRegisterViewController.h */,
+				A2DA042C230D4F9A00491721 /* HGLoginRegisterViewController.m */,
+				A2DA042E230D4FAF00491721 /* HGLoginRegister.storyboard */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		C1C4A67037F20BE1986DCE69 /* Frameworks */ = {
@@ -330,8 +426,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DA03FB230CD8B300491721 /* HGMinePersonalInfo.storyboard in Resources */,
+				A2DA0426230D366F00491721 /* AddressTableViewCell.xib in Resources */,
+				A2DA041B230D2A3A00491721 /* MBProgressHUD.bundle in Resources */,
 				A2DA03A9230B8EB500491721 /* LaunchScreen.storyboard in Resources */,
 				A2DA03DF230BF1E400491721 /* MineCell.plist in Resources */,
+				A2DA040F230D149800491721 /* HGMineEditAddress.storyboard in Resources */,
+				A2DA042F230D4FAF00491721 /* HGLoginRegister.storyboard in Resources */,
 				A2DA03F3230C0B0C00491721 /* SAChangePwd.storyboard in Resources */,
 				A2DA03A6230B8EB500491721 /* Assets.xcassets in Resources */,
 				A2DA03A4230B8EB300491721 /* Main.storyboard in Resources */,
@@ -370,22 +471,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DA0429230D4B6700491721 /* HGAccountModel.m in Sources */,
+				A2DA041E230D319400491721 /* JHUserDefaults.m in Sources */,
 				A2DA03DA230BCD4500491721 /* UIImage+GradientColor.m in Sources */,
 				A2DA03D1230BA20100491721 /* HGOrdersViewController.m in Sources */,
+				A2DA0401230CF36700491721 /* HGMineAddressTableViewController.m in Sources */,
 				A2DA03A1230B8EB300491721 /* ViewController.m in Sources */,
 				A2DA03CE230BA1F700491721 /* HGMineViewController.m in Sources */,
 				A2DA03EB230BFEC400491721 /* HGMineSettingCell.m in Sources */,
+				A2DA03FE230CF2AA00491721 /* CustomizeEmptyView.m in Sources */,
+				A2DA0419230D2A3A00491721 /* MBProgressHUD.m in Sources */,
+				A2DA0405230CF5FF00491721 /* UIBarButtonItem+CustomBarButtonItem.m in Sources */,
 				A2DA03E5230BF77A00491721 /* HGFeedBackViewController.m in Sources */,
 				A2DA03C0230B97E300491721 /* HGTabBarController.m in Sources */,
+				A2DA0421230D33E900491721 /* UIViewController+Uitils.m in Sources */,
 				A2DA03AC230B8EB600491721 /* main.m in Sources */,
 				A2DA03BD230B97C900491721 /* HGNavigationController.m in Sources */,
+				A2DA040C230D138200491721 /* HGMineEditAddressTableViewController.m in Sources */,
 				A2DA03DD230BE9EA00491721 /* HGMineCell.m in Sources */,
 				A2DA03D7230BA21500491721 /* HGMainViewController.m in Sources */,
+				A2DA0412230D1BC700491721 /* HGAddressModel.m in Sources */,
 				A2DA03E8230BFDAE00491721 /* HGSettingViewController.m in Sources */,
+				A2DA03F9230CD89D00491721 /* HGMinePersonalInfoViewController.m in Sources */,
+				A2DA042D230D4F9A00491721 /* HGLoginRegisterViewController.m in Sources */,
+				A2DA041A230D2A3A00491721 /* MBProgressHUD+XMG.m in Sources */,
 				A2DA03CA230B9FDB00491721 /* HGBaseViewController.m in Sources */,
 				A2DA03E2230BF33F00491721 /* HGMineCellModel.m in Sources */,
 				A2DA03D4230BA20C00491721 /* HGShoppingCartViewController.m in Sources */,
 				A2DA039E230B8EB300491721 /* AppDelegate.m in Sources */,
+				A2DA0425230D366F00491721 /* AddressTableViewCell.m in Sources */,
 				A2DA03F2230C0B0C00491721 /* SAChangePwdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

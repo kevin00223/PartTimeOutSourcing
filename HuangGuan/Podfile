@@ -4,5 +4,9 @@ target 'HuangGuan' do
 
 pod 'Masonry'
 pod 'MJExtension'
+pod 'LYEmptyView'
+pod 'YYKit'
+pod 'BGFMDB'
+pod 'WHCNetWorkKit'
 
 end

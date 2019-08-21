@@ -66,7 +66,7 @@
 - (UITextView *)textView {
     if (!_textView) {
         _textView = [[UITextView alloc]init];
-        _textView.backgroundColor = HGHexColor(0xF0F0F0);
+        _textView.backgroundColor = [UIColor whiteColor];
         _textView.textColor = HGHexColor(0x959595);
         _textView.font = [UIFont systemFontOfSize:14];
         UILabel *placeHolderLabel = [[UILabel alloc] init];

@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "HGNavigationController.h"
 #import "HGTabBarController.h"
+#import "HGAddressModel.h"
+#import "HGAccountModel.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +21,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self networkRequest];
+//    [self networkRequest];
+    
+    [[WHC_HttpManager shared] registerNetworkStatusMoniterEvent];
+    
+    if (![UserDefault boolForKey:@"first"]) {
+        [self setupAccountTable];
+    }
     
     self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
 //    HGNavigationController *loginNav = [[HGNavigationController alloc]initWithRootViewController:[[SALoginViewController alloc] init]];
@@ -41,6 +49,24 @@
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+- (void)setupAccountTable {
+    HGAccountModel *account = [[HGAccountModel alloc] init];
+    account.bg_tableName = @"accountDB";
+    account.name = @"SYangN花卷";
+    account.mobile = @"15101070703";
+    account.password = @"123456";
+    [account bg_saveOrUpdate];
+    
+    HGAddressModel *address = [[HGAddressModel alloc] init];
+    address.address = @"四川省成都市高新区天府三街新时代科技广场";
+    address.mobile = @"15101070703";
+    address.name = @"SYangN花卷";
+    address.isDefault = YES;
+    address.bg_tableName = @"addressDB";
+    address.userMobile = @"15101070703";
+    [address bg_save];
 }
 
 - (void)networkRequest {

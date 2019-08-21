@@ -12,6 +12,8 @@
 #import "HGMineCell.h"
 #import "HGFeedBackViewController.h"
 #import "HGSettingViewController.h"
+#import "HGMinePersonalInfoViewController.h"
+#import "HGMineAddressTableViewController.h"
 
 static NSString *mineCellID = @"mineCell";
 
@@ -41,6 +43,20 @@ static NSString *mineCellID = @"mineCell";
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
+    
+    self.titleLabel.text = [JHUserDefaults shareInstance].name;
+    self.subTitleLabel.text = [JHUserDefaults shareInstance].mobile;
+    NSString *avatarStr = [JHUserDefaults shareInstance].avatarUrl;
+    
+    self.topIcon.image = [avatarStr isNotBlank] ? [self convertStringToUIImage:avatarStr] :
+    [UIImage imageNamed:@"mine_icon"];
+}
+
+- (UIImage *)convertStringToUIImage:(NSString *) imageString {
+    NSData * decodedImageData = [[NSData alloc]
+                                 initWithBase64EncodedString:imageString options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    UIImage *_decodedImage = [UIImage imageWithData:decodedImageData];
+    return _decodedImage;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -87,6 +103,12 @@ static NSString *mineCellID = @"mineCell";
     }];
 }
 
+- (void)editButtonClicked: (UIButton *)button {
+    UIStoryboard *board = [UIStoryboard storyboardWithName:@"HGMinePersonalInfo" bundle:nil];
+    HGMinePersonalInfoViewController *vc = [board instantiateViewControllerWithIdentifier:@"personalInfo"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark - tableview datasource / delegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -106,7 +128,7 @@ static NSString *mineCellID = @"mineCell";
     
     switch (indexPath.row) {
         case 0: {
-            NSLog(@"地址");
+            [self.navigationController pushViewController:[HGMineAddressTableViewController new] animated:YES];
         }
             break;
         case 1: {
@@ -148,6 +170,7 @@ static NSString *mineCellID = @"mineCell";
 - (UIImageView *)topContainerView {
     if (!_topContainerView) {
         _topContainerView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 250)];
+        [_topContainerView setUserInteractionEnabled:YES];
         UIColor *startColor = HGHexColor(0xEC6A2E);
         UIColor *endColor = HGHexColor(0xEB5266);
         _topContainerView.image = [UIImage gradientColorImageFromColors:@[startColor,endColor] gradientType:GradientTypeUpleftToLowright imgSize:CGSizeMake(kScreenWidth, 250)];
@@ -190,6 +213,7 @@ static NSString *mineCellID = @"mineCell";
     if (!_editButton) {
         _editButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_editButton setImage:[UIImage imageNamed:@"mine_edit"] forState:UIControlStateNormal];
+        [_editButton addTarget:self action:@selector(editButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _editButton;
 }
