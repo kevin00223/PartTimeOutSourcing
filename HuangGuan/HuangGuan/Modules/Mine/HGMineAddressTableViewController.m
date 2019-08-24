@@ -47,7 +47,10 @@
 
 - (void)loadData {
     _dataArr = nil;
-    _dataArr = [[HGAddressModel bg_findAll:@"addressDB"] mutableCopy];
+    JHUserDefaults *userD = [JHUserDefaults shareInstance];
+    if ([userD.mobile isNotBlank]) {
+        _dataArr = [[HGAddressModel bg_findAll:@"addressDB"] mutableCopy];
+    }
     [self.tableView reloadData];
 }
 

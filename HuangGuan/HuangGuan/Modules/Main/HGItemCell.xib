@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="219" id="KGk-i7-Jjw" customClass="HGItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="219"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="475" height="218.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="被子1" translatesAutoresizingMaskIntoConstraints="NO" id="6HP-FM-hUm">
+                        <rect key="frame" x="15" y="52" width="115" height="115"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大豆纤维被子春秋被芯四季通用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAf-0p-Tiu">
+                        <rect key="frame" x="148" y="62" width="200" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="填充：聚酯纤维（中空）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVE-44-eXj">
+                        <rect key="frame" x="148" y="97" width="124" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月销1206" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Uz-tF-qK6">
+                        <rect key="frame" x="148" y="129" width="49" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥119.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7k-Br-9fh">
+                        <rect key="frame" x="148" y="152" width="45" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.95294117647058818" green="0.18431372549019609" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O7k-Br-9fh" firstAttribute="leading" secondItem="3Uz-tF-qK6" secondAttribute="leading" id="4ku-Je-yYS"/>
+                    <constraint firstItem="EAf-0p-Tiu" firstAttribute="leading" secondItem="6HP-FM-hUm" secondAttribute="trailing" constant="18" id="E8z-SQ-MaR"/>
+                    <constraint firstItem="6HP-FM-hUm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Eli-U7-pKQ"/>
+                    <constraint firstItem="EAf-0p-Tiu" firstAttribute="top" secondItem="6HP-FM-hUm" secondAttribute="top" constant="10" id="F7a-5X-LDV"/>
+                    <constraint firstItem="OVE-44-eXj" firstAttribute="leading" secondItem="EAf-0p-Tiu" secondAttribute="leading" id="IkC-nL-wtZ"/>
+                    <constraint firstItem="OVE-44-eXj" firstAttribute="top" secondItem="EAf-0p-Tiu" secondAttribute="bottom" constant="18" id="WNp-oT-3Ne"/>
+                    <constraint firstItem="6HP-FM-hUm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Z1t-hi-kja"/>
+                    <constraint firstItem="3Uz-tF-qK6" firstAttribute="top" secondItem="OVE-44-eXj" secondAttribute="bottom" constant="18" id="hLr-1J-mJh"/>
+                    <constraint firstItem="O7k-Br-9fh" firstAttribute="bottom" secondItem="6HP-FM-hUm" secondAttribute="bottom" id="jWd-sd-hOJ"/>
+                    <constraint firstItem="3Uz-tF-qK6" firstAttribute="leading" secondItem="OVE-44-eXj" secondAttribute="leading" id="juW-zj-BLy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="itemImageView" destination="6HP-FM-hUm" id="ASt-Jv-wDq"/>
+                <outlet property="itemPrice" destination="O7k-Br-9fh" id="XKP-Ph-XK0"/>
+                <outlet property="itemSale" destination="3Uz-tF-qK6" id="l5z-G6-xKE"/>
+                <outlet property="itemSubtitle" destination="OVE-44-eXj" id="YSV-1j-uRk"/>
+                <outlet property="itemTitle" destination="EAf-0p-Tiu" id="NWk-Zg-5rh"/>
+            </connections>
+            <point key="canvasLocation" x="250.00000000000003" y="94.754464285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="被子1" width="115" height="115"/>
+    </resources>
+</document>

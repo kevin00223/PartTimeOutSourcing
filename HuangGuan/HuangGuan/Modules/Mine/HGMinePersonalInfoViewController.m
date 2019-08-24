@@ -14,6 +14,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
 
+@property (nonatomic, strong) UIButton *logoutButton;
+
+
 @end
 
 @implementation HGMinePersonalInfoViewController
@@ -22,7 +25,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self initValues];
-    
 }
 
 - (void)initValues {
@@ -31,10 +33,16 @@
     self.nameTextField.text = [JHUserDefaults shareInstance].name;
     self.phoneTextField.text = [JHUserDefaults shareInstance].mobile;
     NSString *avatarStr = [JHUserDefaults shareInstance].avatarUrl;
-    self.avatarImage.image = [avatarStr isNotBlank] ? [self convertStringToUIImage:avatarStr] : [UIImage imageNamed:@"personalInfoIcon"];
+    self.avatarImage.image = [avatarStr isNotBlank] ? [UIImage imageNamed:avatarStr] : [UIImage imageNamed:@"personalInfoIcon"];
     
     UIBarButtonItem *confirmBtn = [UIBarButtonItem itemWithTitle:@"确定" Image:nil target:self action:@selector(confirmBtnClick)];
     self.navigationItem.rightBarButtonItem = confirmBtn;
+    
+    self.tableView.tableFooterView = self.logoutButton;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return kScreenHeight - kStatusBarAndNavigationBarHeight - 44 - 210;
 }
 
 - (void)confirmBtnClick {
@@ -47,11 +55,24 @@
     } isShowHud:YES];
 }
 
-- (UIImage *)convertStringToUIImage:(NSString *) imageString {
-    NSData * decodedImageData = [[NSData alloc]
-                                 initWithBase64EncodedString:imageString options:NSDataBase64DecodingIgnoreUnknownCharacters];
-    UIImage *_decodedImage = [UIImage imageWithData:decodedImageData];
-    return _decodedImage;
+- (void)logoutButtonClicked: (UIButton *)button {
+    [self toDoAnythingWithInternet:^{
+        self.tabBarController.selectedIndex = 0;
+        [[JHUserDefaults shareInstance] loginOut];
+        [self.navigationController popViewControllerAnimated:YES];
+    } isShowHud:YES];
+}
+
+
+- (UIButton *)logoutButton {
+    if (!_logoutButton) {
+        _logoutButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_logoutButton setFrame:CGRectMake(0, 0, kScreenWidth, 44)];
+        [_logoutButton setTitle:@"退出登录" forState:UIControlStateNormal];
+        [_logoutButton setBackgroundColor:HGHexColor(0xEB5266)];
+        [_logoutButton addTarget:self action:@selector(logoutButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _logoutButton;
 }
 
 @end

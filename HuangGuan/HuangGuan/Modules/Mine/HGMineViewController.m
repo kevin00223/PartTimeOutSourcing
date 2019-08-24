@@ -27,6 +27,8 @@ static NSString *mineCellID = @"mineCell";
 @property (nonatomic, strong) UILabel *subTitleLabel;
 @property (nonatomic, strong) UIButton *editButton;
 
+@property (nonatomic, strong) UIButton *loginButton;
+
 @property (nonatomic, copy) NSArray *dataSource;
 
 @end
@@ -48,16 +50,20 @@ static NSString *mineCellID = @"mineCell";
     self.subTitleLabel.text = [JHUserDefaults shareInstance].mobile;
     NSString *avatarStr = [JHUserDefaults shareInstance].avatarUrl;
     
-    self.topIcon.image = [avatarStr isNotBlank] ? [self convertStringToUIImage:avatarStr] :
-    [UIImage imageNamed:@"mine_icon"];
+    self.topIcon.image = [avatarStr isNotBlank] ? [UIImage imageNamed:avatarStr] :
+    [UIImage imageNamed:@"mine_default_icon"];
+    [self.editButton setHidden: ![self.titleLabel.text isNotBlank]];
+    [self.loginButton setHidden:[self.titleLabel.text isNotBlank]];
 }
 
-- (UIImage *)convertStringToUIImage:(NSString *) imageString {
-    NSData * decodedImageData = [[NSData alloc]
-                                 initWithBase64EncodedString:imageString options:NSDataBase64DecodingIgnoreUnknownCharacters];
-    UIImage *_decodedImage = [UIImage imageWithData:decodedImageData];
-    return _decodedImage;
-}
+//- (UIImage *)convertStringToUIImage:(NSString *) imageString {
+//    NSData *data = [imageString dataUsingEncoding:NSUTF8StringEncoding];
+//    NSString *encodedString = [data base64EncodedStringWithOptions:0];
+//    NSData * decodedImageData = [[NSData alloc]
+//                                 initWithBase64EncodedString:encodedString options:NSDataBase64DecodingIgnoreUnknownCharacters];
+//    UIImage *_decodedImage = [UIImage imageWithData:decodedImageData];
+//    return _decodedImage;
+//}
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
@@ -70,6 +76,7 @@ static NSString *mineCellID = @"mineCell";
     [self.topContainerView addSubview:self.titleLabel];
     [self.topContainerView addSubview:self.subTitleLabel];
     [self.topContainerView addSubview:self.editButton];
+    [self.topContainerView addSubview:self.loginButton];
     self.tableView.tableHeaderView = self.topContainerView;
 }
 
@@ -84,6 +91,11 @@ static NSString *mineCellID = @"mineCell";
         make.centerX.equalTo(self.topContainerView);
         make.top.equalTo(self.topContainerView).offset(65);
         make.width.height.offset(70);
+    }];
+    
+    [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.topContainerView);
+        make.top.equalTo(self.topIcon.mas_bottom).offset(20);
     }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -109,6 +121,12 @@ static NSString *mineCellID = @"mineCell";
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)loginButtonClicked {
+    UIStoryboard *board = [UIStoryboard storyboardWithName:@"HGLoginRegister" bundle:nil];
+    HGMinePersonalInfoViewController *vc = [board instantiateViewControllerWithIdentifier:@"loginRegister"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 #pragma mark - tableview datasource / delegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -125,29 +143,40 @@ static NSString *mineCellID = @"mineCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    JHUserDefaults *userD = [JHUserDefaults shareInstance];
     
-    switch (indexPath.row) {
-        case 0: {
-            [self.navigationController pushViewController:[HGMineAddressTableViewController new] animated:YES];
+    [self toDoAnythingWithInternet:^{
+        switch (indexPath.row) {
+            case 0: {
+                if ([userD.mobile isNotBlank]) {
+                    [self.navigationController pushViewController:[HGMineAddressTableViewController new] animated:YES];
+                }else{
+                    [self loginRequest];
+                }
+                
+            }
+                break;
+            case 1: {
+                // 反馈
+                if ([userD.mobile isNotBlank]) {
+                    [self.navigationController pushViewController:[HGFeedBackViewController new] animated:YES];
+                }else{
+                    [self loginRequest];
+                }
+                
+            }
+                break;
+            case 2:
+                [MBProgressHUD showMessage:@"当前为最新版本"];
+                break;
+            case 3:
+                [MBProgressHUD showMessage:@"清除成功"];
+                break;
+            default:
+                break;
         }
-            break;
-        case 1: {
-            // 反馈
-            [self.navigationController pushViewController:[HGFeedBackViewController new] animated:YES];
-        }
-            break;
-        case 2:
-            NSLog(@"版本更新");
-            break;
-        case 3:
-            NSLog(@"清除缓存");
-            break;
-        case 4:
-            // 设置
-            [self.navigationController pushViewController:[HGSettingViewController new] animated:YES];
-        default:
-            break;
-    }
+    } isShowHud:YES];
+    
 }
 
 #pragma mark - lazy loading
@@ -223,6 +252,15 @@ static NSString *mineCellID = @"mineCell";
         _dataSource = [HGMineCellModel mineCellModelWithPlistName:@"MineCell.plist"];
     }
     return _dataSource;
+}
+
+- (UIButton *)loginButton {
+    if (!_loginButton) {
+        _loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_loginButton setImage:[UIImage imageNamed:@"mine_login"] forState:UIControlStateNormal];
+        [_loginButton addTarget:self action:@selector(loginButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _loginButton;
 }
 
 @end

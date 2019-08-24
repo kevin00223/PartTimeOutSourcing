@@ -19,5 +19,6 @@
 #import <WHC_HttpManager.h>
 #import "UIViewController+Uitils.h"
 #import "BGFMDB.h"
+#import "MJExtension.h"
 
 #endif /* PrefixHeader_pch */

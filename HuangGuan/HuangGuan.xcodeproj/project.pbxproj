@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		84AB4813AA9E8212B9B4EF47 /* libPods-HuangGuan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A0E092F9C20DEDCC909AB7 /* libPods-HuangGuan.a */; };
+		A2A1E5792311332B00AB85CA /* HGItemListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A1E5782311332B00AB85CA /* HGItemListTableViewController.m */; };
+		A2A1E57B2311343B00AB85CA /* Item.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2A1E57A2311343B00AB85CA /* Item.plist */; };
+		A2A1E57E23113E2700AB85CA /* HGItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A1E57D23113E2700AB85CA /* HGItemModel.m */; };
+		A2A1E582231141DA00AB85CA /* HGItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A1E580231141DA00AB85CA /* HGItemCell.m */; };
+		A2A1E583231141DA00AB85CA /* HGItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2A1E581231141DA00AB85CA /* HGItemCell.xib */; };
+		A2A1E58A23114AF300AB85CA /* HGItemDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A1E58823114AF300AB85CA /* HGItemDetailsTableViewController.m */; };
+		A2A1E58F23114FAE00AB85CA /* HGDeitalFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A1E58D23114FAE00AB85CA /* HGDeitalFirstCell.m */; };
+		A2A1E59023114FAE00AB85CA /* HGDeitalFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2A1E58E23114FAE00AB85CA /* HGDeitalFirstCell.xib */; };
+		A2A1E5942311509300AB85CA /* HGDetailSecondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A1E5922311509300AB85CA /* HGDetailSecondCell.m */; };
+		A2A1E5952311509300AB85CA /* HGDetailSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2A1E5932311509300AB85CA /* HGDetailSecondCell.xib */; };
 		A2DA039E230B8EB300491721 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA039D230B8EB300491721 /* AppDelegate.m */; };
 		A2DA03A1230B8EB300491721 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03A0230B8EB300491721 /* ViewController.m */; };
 		A2DA03A4230B8EB300491721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA03A2230B8EB300491721 /* Main.storyboard */; };
@@ -48,12 +58,32 @@
 		A2DA0429230D4B6700491721 /* HGAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA0428230D4B6700491721 /* HGAccountModel.m */; };
 		A2DA042D230D4F9A00491721 /* HGLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA042C230D4F9A00491721 /* HGLoginRegisterViewController.m */; };
 		A2DA042F230D4FAF00491721 /* HGLoginRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA042E230D4FAF00491721 /* HGLoginRegister.storyboard */; };
+		A2DA04322310ECCB00491721 /* FXCustomizeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA04312310ECCB00491721 /* FXCustomizeButton.m */; };
+		A2DA043523110E5400491721 /* UIButton+HGCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA043423110E5400491721 /* UIButton+HGCustomButton.m */; };
+		A2DA04392311234C00491721 /* HGMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA04372311234C00491721 /* HGMainTableViewCell.m */; };
+		A2DA043A2311234C00491721 /* HGMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2DA04382311234C00491721 /* HGMainTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19A0E092F9C20DEDCC909AB7 /* libPods-HuangGuan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HuangGuan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5935E396E0B40CA6BF87D49A /* Pods-HuangGuan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuangGuan.debug.xcconfig"; path = "Target Support Files/Pods-HuangGuan/Pods-HuangGuan.debug.xcconfig"; sourceTree = "<group>"; };
 		99AA282045AB15149CFEBBA0 /* Pods-HuangGuan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuangGuan.release.xcconfig"; path = "Target Support Files/Pods-HuangGuan/Pods-HuangGuan.release.xcconfig"; sourceTree = "<group>"; };
+		A2A1E5772311332B00AB85CA /* HGItemListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGItemListTableViewController.h; sourceTree = "<group>"; };
+		A2A1E5782311332B00AB85CA /* HGItemListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGItemListTableViewController.m; sourceTree = "<group>"; };
+		A2A1E57A2311343B00AB85CA /* Item.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Item.plist; sourceTree = "<group>"; };
+		A2A1E57C23113E2700AB85CA /* HGItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGItemModel.h; sourceTree = "<group>"; };
+		A2A1E57D23113E2700AB85CA /* HGItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGItemModel.m; sourceTree = "<group>"; };
+		A2A1E57F231141DA00AB85CA /* HGItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGItemCell.h; sourceTree = "<group>"; };
+		A2A1E580231141DA00AB85CA /* HGItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGItemCell.m; sourceTree = "<group>"; };
+		A2A1E581231141DA00AB85CA /* HGItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGItemCell.xib; sourceTree = "<group>"; };
+		A2A1E58723114AF300AB85CA /* HGItemDetailsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGItemDetailsTableViewController.h; sourceTree = "<group>"; };
+		A2A1E58823114AF300AB85CA /* HGItemDetailsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGItemDetailsTableViewController.m; sourceTree = "<group>"; };
+		A2A1E58C23114FAE00AB85CA /* HGDeitalFirstCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGDeitalFirstCell.h; sourceTree = "<group>"; };
+		A2A1E58D23114FAE00AB85CA /* HGDeitalFirstCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGDeitalFirstCell.m; sourceTree = "<group>"; };
+		A2A1E58E23114FAE00AB85CA /* HGDeitalFirstCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGDeitalFirstCell.xib; sourceTree = "<group>"; };
+		A2A1E5912311509300AB85CA /* HGDetailSecondCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGDetailSecondCell.h; sourceTree = "<group>"; };
+		A2A1E5922311509300AB85CA /* HGDetailSecondCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGDetailSecondCell.m; sourceTree = "<group>"; };
+		A2A1E5932311509300AB85CA /* HGDetailSecondCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGDetailSecondCell.xib; sourceTree = "<group>"; };
 		A2DA0399230B8EB300491721 /* HuangGuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuangGuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA039C230B8EB300491721 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2DA039D230B8EB300491721 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -127,6 +157,13 @@
 		A2DA042B230D4F9A00491721 /* HGLoginRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGLoginRegisterViewController.h; sourceTree = "<group>"; };
 		A2DA042C230D4F9A00491721 /* HGLoginRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGLoginRegisterViewController.m; sourceTree = "<group>"; };
 		A2DA042E230D4FAF00491721 /* HGLoginRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HGLoginRegister.storyboard; sourceTree = "<group>"; };
+		A2DA04302310ECCB00491721 /* FXCustomizeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCustomizeButton.h; sourceTree = "<group>"; };
+		A2DA04312310ECCB00491721 /* FXCustomizeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCustomizeButton.m; sourceTree = "<group>"; };
+		A2DA043323110E5400491721 /* UIButton+HGCustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+HGCustomButton.h"; sourceTree = "<group>"; };
+		A2DA043423110E5400491721 /* UIButton+HGCustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HGCustomButton.m"; sourceTree = "<group>"; };
+		A2DA04362311234C00491721 /* HGMainTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMainTableViewCell.h; sourceTree = "<group>"; };
+		A2DA04372311234C00491721 /* HGMainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMainTableViewCell.m; sourceTree = "<group>"; };
+		A2DA04382311234C00491721 /* HGMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGMainTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +284,10 @@
 				A2DA041C230D319400491721 /* JHUserDefaults.m */,
 				A2DA041F230D33E900491721 /* UIViewController+Uitils.h */,
 				A2DA0420230D33E900491721 /* UIViewController+Uitils.m */,
+				A2DA04302310ECCB00491721 /* FXCustomizeButton.h */,
+				A2DA04312310ECCB00491721 /* FXCustomizeButton.m */,
+				A2DA043323110E5400491721 /* UIButton+HGCustomButton.h */,
+				A2DA043423110E5400491721 /* UIButton+HGCustomButton.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -268,6 +309,25 @@
 			children = (
 				A2DA03D5230BA21500491721 /* HGMainViewController.h */,
 				A2DA03D6230BA21500491721 /* HGMainViewController.m */,
+				A2DA04362311234C00491721 /* HGMainTableViewCell.h */,
+				A2DA04372311234C00491721 /* HGMainTableViewCell.m */,
+				A2DA04382311234C00491721 /* HGMainTableViewCell.xib */,
+				A2A1E5772311332B00AB85CA /* HGItemListTableViewController.h */,
+				A2A1E5782311332B00AB85CA /* HGItemListTableViewController.m */,
+				A2A1E57A2311343B00AB85CA /* Item.plist */,
+				A2A1E57C23113E2700AB85CA /* HGItemModel.h */,
+				A2A1E57D23113E2700AB85CA /* HGItemModel.m */,
+				A2A1E57F231141DA00AB85CA /* HGItemCell.h */,
+				A2A1E580231141DA00AB85CA /* HGItemCell.m */,
+				A2A1E581231141DA00AB85CA /* HGItemCell.xib */,
+				A2A1E58723114AF300AB85CA /* HGItemDetailsTableViewController.h */,
+				A2A1E58823114AF300AB85CA /* HGItemDetailsTableViewController.m */,
+				A2A1E58C23114FAE00AB85CA /* HGDeitalFirstCell.h */,
+				A2A1E58D23114FAE00AB85CA /* HGDeitalFirstCell.m */,
+				A2A1E58E23114FAE00AB85CA /* HGDeitalFirstCell.xib */,
+				A2A1E5912311509300AB85CA /* HGDetailSecondCell.h */,
+				A2A1E5922311509300AB85CA /* HGDetailSecondCell.m */,
+				A2A1E5932311509300AB85CA /* HGDetailSecondCell.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -426,10 +486,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A1E583231141DA00AB85CA /* HGItemCell.xib in Resources */,
+				A2DA043A2311234C00491721 /* HGMainTableViewCell.xib in Resources */,
 				A2DA03FB230CD8B300491721 /* HGMinePersonalInfo.storyboard in Resources */,
 				A2DA0426230D366F00491721 /* AddressTableViewCell.xib in Resources */,
+				A2A1E57B2311343B00AB85CA /* Item.plist in Resources */,
 				A2DA041B230D2A3A00491721 /* MBProgressHUD.bundle in Resources */,
+				A2A1E59023114FAE00AB85CA /* HGDeitalFirstCell.xib in Resources */,
 				A2DA03A9230B8EB500491721 /* LaunchScreen.storyboard in Resources */,
+				A2A1E5952311509300AB85CA /* HGDetailSecondCell.xib in Resources */,
 				A2DA03DF230BF1E400491721 /* MineCell.plist in Resources */,
 				A2DA040F230D149800491721 /* HGMineEditAddress.storyboard in Resources */,
 				A2DA042F230D4FAF00491721 /* HGLoginRegister.storyboard in Resources */,
@@ -473,16 +538,19 @@
 			files = (
 				A2DA0429230D4B6700491721 /* HGAccountModel.m in Sources */,
 				A2DA041E230D319400491721 /* JHUserDefaults.m in Sources */,
+				A2A1E58F23114FAE00AB85CA /* HGDeitalFirstCell.m in Sources */,
 				A2DA03DA230BCD4500491721 /* UIImage+GradientColor.m in Sources */,
 				A2DA03D1230BA20100491721 /* HGOrdersViewController.m in Sources */,
 				A2DA0401230CF36700491721 /* HGMineAddressTableViewController.m in Sources */,
 				A2DA03A1230B8EB300491721 /* ViewController.m in Sources */,
+				A2DA04322310ECCB00491721 /* FXCustomizeButton.m in Sources */,
 				A2DA03CE230BA1F700491721 /* HGMineViewController.m in Sources */,
 				A2DA03EB230BFEC400491721 /* HGMineSettingCell.m in Sources */,
 				A2DA03FE230CF2AA00491721 /* CustomizeEmptyView.m in Sources */,
 				A2DA0419230D2A3A00491721 /* MBProgressHUD.m in Sources */,
 				A2DA0405230CF5FF00491721 /* UIBarButtonItem+CustomBarButtonItem.m in Sources */,
 				A2DA03E5230BF77A00491721 /* HGFeedBackViewController.m in Sources */,
+				A2A1E5942311509300AB85CA /* HGDetailSecondCell.m in Sources */,
 				A2DA03C0230B97E300491721 /* HGTabBarController.m in Sources */,
 				A2DA0421230D33E900491721 /* UIViewController+Uitils.m in Sources */,
 				A2DA03AC230B8EB600491721 /* main.m in Sources */,
@@ -492,15 +560,21 @@
 				A2DA03D7230BA21500491721 /* HGMainViewController.m in Sources */,
 				A2DA0412230D1BC700491721 /* HGAddressModel.m in Sources */,
 				A2DA03E8230BFDAE00491721 /* HGSettingViewController.m in Sources */,
+				A2A1E57E23113E2700AB85CA /* HGItemModel.m in Sources */,
 				A2DA03F9230CD89D00491721 /* HGMinePersonalInfoViewController.m in Sources */,
+				A2A1E58A23114AF300AB85CA /* HGItemDetailsTableViewController.m in Sources */,
 				A2DA042D230D4F9A00491721 /* HGLoginRegisterViewController.m in Sources */,
 				A2DA041A230D2A3A00491721 /* MBProgressHUD+XMG.m in Sources */,
+				A2DA04392311234C00491721 /* HGMainTableViewCell.m in Sources */,
 				A2DA03CA230B9FDB00491721 /* HGBaseViewController.m in Sources */,
 				A2DA03E2230BF33F00491721 /* HGMineCellModel.m in Sources */,
 				A2DA03D4230BA20C00491721 /* HGShoppingCartViewController.m in Sources */,
+				A2A1E5792311332B00AB85CA /* HGItemListTableViewController.m in Sources */,
 				A2DA039E230B8EB300491721 /* AppDelegate.m in Sources */,
 				A2DA0425230D366F00491721 /* AddressTableViewCell.m in Sources */,
+				A2A1E582231141DA00AB85CA /* HGItemCell.m in Sources */,
 				A2DA03F2230C0B0C00491721 /* SAChangePwdViewController.m in Sources */,
+				A2DA043523110E5400491721 /* UIButton+HGCustomButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

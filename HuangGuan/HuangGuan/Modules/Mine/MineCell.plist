@@ -26,11 +26,5 @@
 		<key>iconImage</key>
 		<string>mine_cache</string>
 	</dict>
-	<dict>
-		<key>title</key>
-		<string>设置</string>
-		<key>iconImage</key>
-		<string>mine_set</string>
-	</dict>
 </array>
 </plist>

@@ -7,15 +7,16 @@
 //
 
 #import "UIViewController+Uitils.h"
+#import "HGLoginRegisterViewController.h"
 
 @implementation UIViewController (Uitils)
 
 - (void)loginRequest {
     JHUserDefaults *userD = [JHUserDefaults shareInstance];
     if (![userD.mobile isNotBlank]) {
-//        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//        LoginRegisterController *loginRegisterVC = [sb instantiateViewControllerWithIdentifier:@"loginRegister"];
-//        [self presentViewController:loginRegisterVC animated:YES completion:nil];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"HGLoginRegister" bundle:nil];
+        HGLoginRegisterViewController *loginRegisterVC = [sb instantiateViewControllerWithIdentifier:@"loginRegister"];
+        [self presentViewController:loginRegisterVC animated:YES completion:nil];
         return;
     }
 }
