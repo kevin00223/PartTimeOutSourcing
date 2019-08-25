@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *itemSubtitle;
 @property (nonatomic, strong) NSString *itemSales;
 @property (nonatomic, strong) NSString *itemPrice;
+@property (nonatomic, assign) NSUInteger Id;
 
 + (NSArray *)messageModelWithPlistName: (NSString *)plistName;
 

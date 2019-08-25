@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HGItemModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HGDeitalFirstCell : UITableViewCell
+
+@property (nonatomic, strong) HGItemModel *cellModel;
 
 @end
 

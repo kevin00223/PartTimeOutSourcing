@@ -8,6 +8,15 @@
 
 #import "HGDeitalFirstCell.h"
 
+@interface HGDeitalFirstCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *detailTitle;
+@property (weak, nonatomic) IBOutlet UILabel *detailSale;
+@property (weak, nonatomic) IBOutlet UILabel *detailPrice;
+
+
+@end
+
 @implementation HGDeitalFirstCell
 
 - (void)awakeFromNib {
@@ -19,6 +28,13 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+-(void)setCellModel:(HGItemModel *)cellModel {
+    _cellModel = cellModel;
+    self.detailTitle.text = cellModel.itemTitle;
+    self.detailSale.text = cellModel.itemSales;
+    self.detailPrice.text = cellModel.itemPrice;
 }
 
 @end

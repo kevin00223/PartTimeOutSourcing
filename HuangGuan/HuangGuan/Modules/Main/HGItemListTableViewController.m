@@ -46,6 +46,7 @@
     HGItemDetailsTableViewController *detailVC = [[HGItemDetailsTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
     HGItemModel *model = self.data[indexPath.row];
     detailVC.topImageStr = model.itemImage;
+    detailVC.detailModel = model;
     [self.navigationController pushViewController:detailVC animated:YES];
 }
 

@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HGItemModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HGItemDetailsTableViewController : UITableViewController
 
 @property (nonatomic, strong) NSString *topImageStr;
+@property (nonatomic, strong) HGItemModel *detailModel;
 
 @end
 

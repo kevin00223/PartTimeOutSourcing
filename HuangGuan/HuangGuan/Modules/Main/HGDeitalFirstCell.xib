@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="HGDeitalFirstCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detailFirst" rowHeight="75" id="KGk-i7-Jjw" customClass="HGDeitalFirstCell">
             <rect key="frame" x="0.0" y="0.0" width="530" height="75"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -48,6 +48,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="detailPrice" destination="s39-LE-HjA" id="q3W-Bm-yLJ"/>
+                <outlet property="detailSale" destination="9bQ-0Z-3Am" id="f9y-Yn-LJq"/>
+                <outlet property="detailTitle" destination="8Rc-Gi-28r" id="PnR-HL-kz3"/>
+            </connections>
             <point key="canvasLocation" x="289.85507246376812" y="112.83482142857142"/>
         </tableViewCell>
     </objects>
