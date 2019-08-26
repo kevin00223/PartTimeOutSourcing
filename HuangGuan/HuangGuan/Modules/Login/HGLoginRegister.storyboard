@@ -317,7 +317,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="登录"/>
                                 <connections>
-                                    <segue destination="pNF-Pa-IGj" kind="presentation" id="j3c-vA-YV1"/>
+                                    <action selector="clickToLoginPage:" destination="Le3-8B-SHK" eventType="touchUpInside" id="OeC-np-36d"/>
                                 </connections>
                             </button>
                         </subviews>

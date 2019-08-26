@@ -95,6 +95,11 @@
     } isShowHud:YES];
 }
 
+- (IBAction)clickToLoginPage:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 - (IBAction)backButtonClicked:(UIButton *)sender {
     HGTabBarController *tabVC = (HGTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
     tabVC.selectedIndex = 0;
