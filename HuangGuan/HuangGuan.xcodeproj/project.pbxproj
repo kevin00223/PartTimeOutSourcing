@@ -655,6 +655,7 @@
 				A2DA0395230B8EB300491721 /* Sources */,
 				A2DA0396230B8EB300491721 /* Frameworks */,
 				A2DA0397230B8EB300491721 /* Resources */,
+				6301B348F5A69745FEA1759C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -744,6 +745,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6301B348F5A69745FEA1759C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HuangGuan/Pods-HuangGuan-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HuangGuan/Pods-HuangGuan-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HuangGuan/Pods-HuangGuan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		88DFE56664D4A6554BD009B7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

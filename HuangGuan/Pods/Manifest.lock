@@ -5,6 +5,7 @@ PODS:
   - BGFMDB/BG (2.0.13):
     - BGFMDB/FMDB
   - BGFMDB/FMDB (2.0.13)
+  - IQKeyboardManager (6.4.0)
   - LYEmptyView (1.2.3)
   - Masonry (1.1.0)
   - MJExtension (3.0.17)
@@ -28,6 +29,7 @@ PODS:
 
 DEPENDENCIES:
   - BGFMDB
+  - IQKeyboardManager
   - LYEmptyView
   - Masonry
   - MJExtension
@@ -37,6 +39,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BGFMDB
+    - IQKeyboardManager
     - LYEmptyView
     - Masonry
     - MJExtension
@@ -45,12 +48,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   BGFMDB: 48e6823027232402a678acc7f71484b1fc9171d0
+  IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
   LYEmptyView: ea5827f3f81fcbec427f990005501991477bdae8
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
   WHCNetWorkKit: 169c27c8b8008e8f8d679277929777083a2379b9
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: dec6f5477dac7927817ca77ce2afa99240a0d2e2
+PODFILE CHECKSUM: daa6c63c6bbf25f79c84f939a87789140ea8c024
 
 COCOAPODS: 1.7.4

@@ -8,5 +8,6 @@ pod 'LYEmptyView'
 pod 'YYKit'
 pod 'BGFMDB'
 pod 'WHCNetWorkKit'
+pod 'IQKeyboardManager'
 
 end

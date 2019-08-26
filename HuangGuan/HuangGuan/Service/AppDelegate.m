@@ -11,6 +11,7 @@
 #import "HGTabBarController.h"
 #import "HGAddressModel.h"
 #import "HGAccountModel.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
 
 @interface AppDelegate ()
 
@@ -23,6 +24,8 @@
     // Override point for customization after application launch.
 //    [self networkRequest];
     
+    [self setupIQKeyboardManager];
+    
     [[WHC_HttpManager shared] registerNetworkStatusMoniterEvent];
     
     if (![UserDefault boolForKey:@"first"]) {
@@ -30,19 +33,8 @@
     }
     
     self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
-//    HGNavigationController *loginNav = [[HGNavigationController alloc]initWithRootViewController:[[SALoginViewController alloc] init]];
+
     HGTabBarController *tabBarVC = [[HGTabBarController alloc]init];
-    
-//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-//    NSString *studentNo = [userDefaults objectForKey:@"studentNo"];
-//    if (studentNo.length == 0) {
-//        [userDefaults setObject:@"160601" forKey:@"studentNo"];
-//        [userDefaults setObject:@"123123" forKey:@"password"];
-//
-//        self.window.rootViewController = loginNav;
-//    }else{
-//        self.window.rootViewController = tabBarVC;
-//    }
     
     self.window.rootViewController = tabBarVC;
     
@@ -77,6 +69,26 @@
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request];
     [dataTask resume];
+}
+
+- (void)setupIQKeyboardManager {
+    IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager]; // 获取类库的单例变量
+    
+    keyboardManager.enable = YES; // 控制整个功能是否启用
+    
+    keyboardManager.shouldResignOnTouchOutside = YES; // 控制点击背景是否收起键盘
+    
+    keyboardManager.shouldToolbarUsesTextFieldTintColor = YES; // 控制键盘上的工具条文字颜色是否用户自定义
+    
+    keyboardManager.toolbarManageBehaviour = IQAutoToolbarBySubviews; // 有多个输入框时，可以通过点击Toolbar 上的“前一个”“后一个”按钮来实现移动到不同的输入框
+    
+    keyboardManager.enableAutoToolbar = YES; // 控制是否显示键盘上的工具条
+    
+    keyboardManager.shouldShowToolbarPlaceholder = YES; // 是否显示占位文字
+    
+    keyboardManager.placeholderFont = [UIFont boldSystemFontOfSize:17]; // 设置占位文字的字体
+    
+    keyboardManager.keyboardDistanceFromTextField = 10.0f; // 输入框距离键盘的距离
 }
 
 
