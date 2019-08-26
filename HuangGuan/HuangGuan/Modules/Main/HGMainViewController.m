@@ -12,6 +12,7 @@
 #import "HGMainTableViewCell.h"
 #import "HGItemListTableViewController.h"
 #import "HGItemModel.h"
+#import "HGItemDetailsTableViewController.h"
 
 @interface HGMainViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -108,7 +109,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HGMainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.dataSourceDic = self.goodsDataSource[indexPath.section];
+    cell.cellTag = indexPath.section;
+    cell.itemDidClick = ^(HGItemModel * _Nonnull item) {
+        HGItemDetailsTableViewController *vc = [[HGItemDetailsTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
+        vc.topImageStr = item.itemImage;
+        vc.detailModel = item;
+        [self.navigationController pushViewController:vc animated:YES];
+    };
     return cell;
 }
 
@@ -238,44 +247,14 @@
                              @{
                                  @"title" : @"热销产品",
                                  @"subTitle" : @"热销榜单·不容错过",
-                                 @"goods" : @[
-                                         @{
-                                             @"goodsButtonStr" : @"热销1",
-                                             @"goodsName" : @"1.8加厚床垫海绵 软垫",
-                                             @"price" : @"¥89.00"
-                                             },
-                                         @{
-                                             @"goodsButtonStr" : @"热销2",
-                                             @"goodsName" : @"夏季真丝四件套 冰丝",
-                                             @"price" : @"¥139.00"
-                                             },
-                                         @{
-                                             @"goodsButtonStr" : @"热销3",
-                                             @"goodsName" : @"夏天水洗棉夏被",
-                                             @"price" : @"¥49.00"
-                                             }
+                                 @"goods" : @[self.itemListArray[0][0], self.itemListArray[1][0], self.itemListArray[2][0]
                                          ]
                                  
                                 },
                              @{
                                  @"title" : @"最新产品",
                                  @"subTitle" : @"最新产品·尝新低价",
-                                 @"goods" : @[
-                                         @{
-                                             @"goodsButtonStr" : @"新品1",
-                                             @"goodsName" : @"学生宿舍蚊帐免 安装蒙古包0.9m",
-                                             @"price" : @"¥128.00"
-                                             },
-                                         @{
-                                             @"goodsButtonStr" : @"新品2",
-                                             @"goodsName" : @"60支贡缎床笠纯 棉床垫保护罩",
-                                             @"price" : @"¥69.00"
-                                             },
-                                         @{
-                                             @"goodsButtonStr" : @"新品3",
-                                             @"goodsName" : @"床帘蚊帐一体式 上下铺支架床幔女",
-                                             @"price" : @"¥129.00"
-                                             }
+                                 @"goods" : @[self.itemListArray[3][0], self.itemListArray[4][1], self.itemListArray[2][3]
                                          ]
                                  
                                  },

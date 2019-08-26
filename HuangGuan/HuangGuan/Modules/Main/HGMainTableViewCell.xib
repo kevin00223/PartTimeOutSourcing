@@ -38,6 +38,9 @@
                             <constraint firstAttribute="height" constant="90" id="Vl4-9k-W6w"/>
                         </constraints>
                         <state key="normal" title="Button" image="热销1"/>
+                        <connections>
+                            <action selector="itemButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ga3-Oh-hs6"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tD9-Nk-hJ5">
                         <rect key="frame" x="186" y="78" width="90" height="90"/>
@@ -46,6 +49,9 @@
                             <constraint firstAttribute="height" constant="90" id="dfT-hk-ZuX"/>
                         </constraints>
                         <state key="normal" image="热销2"/>
+                        <connections>
+                            <action selector="itemButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="W4B-jg-Msp"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Uj-mW-FNG">
                         <rect key="frame" x="352" y="78" width="90" height="90"/>
@@ -54,6 +60,9 @@
                             <constraint firstAttribute="width" constant="90" id="Ugl-2h-7a4"/>
                         </constraints>
                         <state key="normal" title="Button" image="热销3"/>
+                        <connections>
+                            <action selector="itemButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Lkf-pa-j2Y"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLg-2H-HRk">
                         <rect key="frame" x="20" y="178" width="90" height="29"/>
