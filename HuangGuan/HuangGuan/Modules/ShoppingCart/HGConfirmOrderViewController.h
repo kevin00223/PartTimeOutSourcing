@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) Order *orderData;
 
+@property (nonatomic, assign) BOOL isFromShopCar;
+
 @end
 
 NS_ASSUME_NONNULL_END

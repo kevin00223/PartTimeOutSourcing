@@ -7,10 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HGAddressModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger,Orgin) {
+    OrginMyAddress,
+    OrginOrder
+};
+
+typedef void(^SelectBlock)(HGAddressModel *address);
+
 @interface HGMineAddressTableViewController : UITableViewController
+
+@property (nonatomic, assign) Orgin orgin;
+
+@property (nonatomic, copy) SelectBlock block;
 
 @end
 

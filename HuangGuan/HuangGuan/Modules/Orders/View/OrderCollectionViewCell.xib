@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OrderCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="305" height="125"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pEk-he-hGo">
+                        <rect key="frame" x="0.0" y="15" width="90" height="95"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="z8z-Ex-dDX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fap-81-weE">
+                        <rect key="frame" x="117" y="15" width="173" height="21"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="15"/>
+                        <color key="textColor" red="0.19605264067649841" green="0.19609326124191284" blue="0.19605004787445068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-2b-ytW">
+                        <rect key="frame" x="253.5" y="44" width="35.5" height="20"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                        <color key="textColor" red="0.99863249060000003" green="0.33360490199999998" blue="0.010706758130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hja-v6-PxX">
+                        <rect key="frame" x="117" y="47.5" width="28.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.59601163864135742" green="0.59611696004867554" blue="0.59600502252578735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Fap-81-weE" firstAttribute="top" secondItem="pEk-he-hGo" secondAttribute="top" id="2E5-rA-LMK"/>
+                <constraint firstItem="pEk-he-hGo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="4nI-UZ-OVQ"/>
+                <constraint firstAttribute="trailing" secondItem="Fap-81-weE" secondAttribute="trailing" constant="15" id="NGG-1s-3Qw"/>
+                <constraint firstItem="fsl-2b-ytW" firstAttribute="top" secondItem="Fap-81-weE" secondAttribute="bottom" constant="8" id="Xk1-OR-lQn"/>
+                <constraint firstAttribute="bottom" secondItem="pEk-he-hGo" secondAttribute="bottom" constant="15" id="ZD0-c6-2ow"/>
+                <constraint firstItem="hja-v6-PxX" firstAttribute="leading" secondItem="pEk-he-hGo" secondAttribute="trailing" constant="27" id="cn3-AM-DJ3"/>
+                <constraint firstItem="hja-v6-PxX" firstAttribute="centerY" secondItem="fsl-2b-ytW" secondAttribute="centerY" id="gzK-F7-SYZ"/>
+                <constraint firstItem="Fap-81-weE" firstAttribute="leading" secondItem="hja-v6-PxX" secondAttribute="leading" id="mpx-2H-YNe"/>
+                <constraint firstItem="pEk-he-hGo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="q82-SR-00X"/>
+                <constraint firstAttribute="trailingMargin" secondItem="fsl-2b-ytW" secondAttribute="trailing" id="w0m-Ih-I3m"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="305" height="111"/>
+            <connections>
+                <outlet property="amountLabel" destination="fsl-2b-ytW" id="DKX-eR-OKp"/>
+                <outlet property="countLabel" destination="hja-v6-PxX" id="z97-EL-9h5"/>
+                <outlet property="nameLabel" destination="Fap-81-weE" id="54H-i3-LiF"/>
+                <outlet property="productImage" destination="pEk-he-hGo" id="VHa-oy-4Il"/>
+            </connections>
+            <point key="canvasLocation" x="-183.19999999999999" y="88.605697151424295"/>
+        </collectionViewCell>
+    </objects>
+</document>

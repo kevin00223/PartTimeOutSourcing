@@ -37,22 +37,13 @@
                         <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yf-gA-IlZ">
-                        <rect key="frame" x="453" y="51" width="9" height="22"/>
-                        <state key="normal" image="返回"/>
-                        <connections>
-                            <action selector="toAddressButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Mea-w3-uWi"/>
-                        </connections>
-                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="6Pu-29-2Sm" firstAttribute="leading" secondItem="wMo-bN-czO" secondAttribute="leading" id="Cuv-bt-Jr7"/>
                     <constraint firstItem="aIy-ep-88W" firstAttribute="centerY" secondItem="wMo-bN-czO" secondAttribute="centerY" id="Heg-AQ-dgV"/>
-                    <constraint firstAttribute="trailing" secondItem="5Yf-gA-IlZ" secondAttribute="trailing" constant="15" id="ReM-tY-Bql"/>
                     <constraint firstItem="wMo-bN-czO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="VZT-Ep-N4k"/>
                     <constraint firstItem="6Pu-29-2Sm" firstAttribute="top" secondItem="wMo-bN-czO" secondAttribute="bottom" constant="10" id="fff-Eh-lih"/>
                     <constraint firstItem="wMo-bN-czO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="kL8-Lm-4XG"/>
-                    <constraint firstItem="5Yf-gA-IlZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uFH-nw-aE9"/>
                     <constraint firstItem="aIy-ep-88W" firstAttribute="leading" secondItem="wMo-bN-czO" secondAttribute="trailing" constant="45" id="vyh-bF-G3r"/>
                 </constraints>
             </tableViewCellContentView>
@@ -65,7 +56,4 @@
             <point key="canvasLocation" x="251.44927536231887" y="126.5625"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="返回" width="9" height="15"/>
-    </resources>
 </document>

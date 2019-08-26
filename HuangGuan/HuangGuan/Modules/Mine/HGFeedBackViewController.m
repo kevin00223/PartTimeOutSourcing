@@ -7,6 +7,7 @@
 //
 
 #import "HGFeedBackViewController.h"
+#import "HGMineViewController.h"
 
 @interface HGFeedBackViewController ()
 
@@ -56,7 +57,14 @@
 }
 
 - (void)confirmButtonClicked: (UIButton *)confirmButton {
-    NSLog(@"点了确认-反馈页");
+    [self toDoAnythingWithInternet:^{
+        for (UIViewController *vc in self.navigationController.childViewControllers) {
+            if ([vc isKindOfClass:[HGMineViewController class]]) {
+                [self.navigationController popToViewController:vc animated:YES];
+            }
+        }
+        [MBProgressHUD showMessage:@"反馈已提交"];
+    } isShowHud:YES];
 }
 
 - (void)panGesture: (UIGestureRecognizer *)panGesture {

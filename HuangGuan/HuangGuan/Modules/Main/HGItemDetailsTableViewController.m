@@ -12,6 +12,7 @@
 #import "ShopCarDataTool.h"
 #import "Order.h"
 #import "HGAddressModel.h"
+#import "HGConfirmOrderViewController.h"
 
 @interface HGItemDetailsTableViewController ()
 
@@ -93,10 +94,9 @@
         
         
         [self toDoAnythingWithInternet:^{
-//            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//            ConfirmOrderViewController *confirmOrderVC = [sb instantiateViewControllerWithIdentifier:@"confirmOrderVC"];
-//            confirmOrderVC.orderData = order;
-//            [self.navigationController pushViewController:confirmOrderVC animated:YES];
+            HGConfirmOrderViewController *vc = [[HGConfirmOrderViewController alloc]init];
+            vc.orderData = order;
+            [self.navigationController pushViewController:vc animated:YES];
         } isShowHud:YES];
     }
 }

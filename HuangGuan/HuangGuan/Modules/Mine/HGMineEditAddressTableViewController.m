@@ -37,7 +37,7 @@
     UIButton *saveButton = [UIButton buttonWithType:UIButtonTypeCustom];
     saveButton.frame = CGRectMake(0, 0, kScreenWidth, 44);
     [saveButton setTitle:@"保存" forState:UIControlStateNormal];
-    saveButton.backgroundColor = [UIColor redColor];
+    saveButton.backgroundColor = HGHexColor(0xEB5266);
     [saveButton addTarget:self action:@selector(saveButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     self.tableView.tableFooterView = saveButton;
 }

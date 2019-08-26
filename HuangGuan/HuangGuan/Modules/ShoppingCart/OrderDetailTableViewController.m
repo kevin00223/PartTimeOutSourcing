@@ -9,7 +9,10 @@
 #import "OrderDetailTableViewController.h"
 #import "HGOrderDetailFirstOneCell.h"
 #import "HGOrderDetailSecondCell.h"
-#import "HGOrderDetailThirdCell.h"
+#import "HGOrderDetailThridCell.h"
+#import "HGOrderDetailFourthCell.h"
+#import "HGOrderDetailFinalCell.h"
+#import "HGOrderDetailFifthCell.h"
 
 @interface OrderDetailTableViewController ()
 
@@ -21,16 +24,17 @@
     [super viewDidLoad];
     self.title = @"下单成功";
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UIBarButtonItem *confirmBtn = [UIBarButtonItem itemWithTitle:nil Image:@"back" target:self action:@selector(backBtnClick)];
+    self.navigationItem.leftBarButtonItem = confirmBtn;
+}
+
+- (void)backBtnClick {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 6;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -42,6 +46,15 @@
             return 1;
             break;
         case 2:
+            return self.orderData.itemArr.count;
+            break;
+        case 3:
+            return 1;
+            break;
+        case 4:
+            return 1;
+            break;
+        case 5:
             return 1;
             break;
         default:
@@ -57,6 +70,7 @@
             switch (indexPath.row) {
                 case 0: {
                     HGOrderDetailFirstOneCell *firstOneCell = [[NSBundle mainBundle] loadNibNamed:@"HGOrderDetailFirstOneCell" owner:self options:nil].firstObject;
+                    firstOneCell.order = self.orderData;
                     cell = firstOneCell;
                 }
                     break;
@@ -70,18 +84,35 @@
         }
             break;
         case 1: {
-            HGOrderDetailSecondCell *secondCell = [[NSBundle mainBundle] loadNibNamed:@"HGOrderDetailSecondCell" owner:self options:nil].firstObject;
-            cell = secondCell;
+            cell = [[NSBundle mainBundle] loadNibNamed:@"HGOrderDetailSecondCell" owner:self options:nil].firstObject;
         }
             break;
         case 2: {
-            HGOrderDetailThirdCell *thirdCell = [[NSBundle mainBundle] loadNibNamed:@"HGOrderDetailThirdCell" owner:self options:nil].firstObject;
+             HGOrderDetailThridCell *thirdCell = [[NSBundle mainBundle] loadNibNamed:@"HGOrderDetailThridCell" owner:self options:nil].firstObject;
+            thirdCell.item = self.orderData.itemArr[indexPath.row];
             cell = thirdCell;
+        }
+            break;
+        case 3: {
+            cell = [[NSBundle mainBundle] loadNibNamed:@"HGOrderDetailFourthCell" owner:self options:nil].firstObject;
+        }
+            break;
+        case 4: {
+            HGOrderDetailFifthCell *fifthCell = [[NSBundle mainBundle] loadNibNamed:@"HGOrderDetailFifthCell" owner:self options:nil].firstObject;
+            fifthCell.order = self.orderData;
+            cell = fifthCell;
+        }
+            break;
+        case 5: {
+            HGOrderDetailFinalCell *finalCell = [[NSBundle mainBundle] loadNibNamed:@"HGOrderDetailFinalCell" owner:self options:nil].firstObject;
+            finalCell.order = self.orderData;
+            cell = finalCell;
         }
             break;
         default:
             break;
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
@@ -101,10 +132,19 @@
             }
             break;
         case 1:
-            return 230;
+            return 40;
             break;
         case 2:
-            return 200;
+            return 110;
+            break;
+        case 3:
+            return 80;
+            break;
+        case 4:
+            return 50;
+            break;
+        case 5:
+            return 175;
             break;
         default:
             return 0;
@@ -125,7 +165,11 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 10;
+    if (section == 1 || section == 2) {
+        return 0;
+    }else{
+        return 10;
+    }
 }
 
 

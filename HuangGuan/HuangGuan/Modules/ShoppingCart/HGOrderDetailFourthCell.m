@@ -1,14 +1,14 @@
 //
-//  HGOrderDetailThirdCell.m
+//  HGOrderDetailFourthCell.m
 //  HuangGuan
 //
-//  Created by 李凯 on 2019/8/25.
+//  Created by 李凯 on 2019/8/26.
 //  Copyright © 2019 LK. All rights reserved.
 //
 
-#import "HGOrderDetailThirdCell.h"
+#import "HGOrderDetailFourthCell.h"
 
-@implementation HGOrderDetailThirdCell
+@implementation HGOrderDetailFourthCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

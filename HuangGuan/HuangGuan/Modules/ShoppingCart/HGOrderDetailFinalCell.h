@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Order.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HGOrderDetailThirdCell : UITableViewCell
+@interface HGOrderDetailFinalCell : UITableViewCell
+
+@property (nonatomic, strong) Order *order;
 
 @end
 

@@ -1,23 +1,24 @@
 //
-//  HGConfirmOrderFirstCell.m
+//  HGOrderDetailThirdCell.m
 //  HuangGuan
 //
 //  Created by 李凯 on 2019/8/25.
 //  Copyright © 2019 LK. All rights reserved.
 //
 
-#import "HGConfirmOrderFirstCell.h"
+#import "HGOrderDetailFinalCell.h"
 
-@interface HGConfirmOrderFirstCell ()
+@interface HGOrderDetailFinalCell ()
 
 @property (weak, nonatomic) IBOutlet UILabel *accountName;
 @property (weak, nonatomic) IBOutlet UILabel *accountPhone;
 @property (weak, nonatomic) IBOutlet UILabel *accountAddress;
+@property (weak, nonatomic) IBOutlet UILabel *noteLabel;
 
 
 @end
 
-@implementation HGConfirmOrderFirstCell
+@implementation HGOrderDetailFinalCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -30,12 +31,12 @@
     // Configure the view for the selected state
 }
 
-- (void)setOrderData:(Order *)orderData {
-    _orderData = orderData;
-    self.accountName.text = orderData.address.name;
-    self.accountPhone.text = orderData.address.mobile;
-    self.accountAddress.text = orderData.address.address;
+- (void)setOrder:(Order *)order {
+    _order = order;
+    self.accountName.text = order.address.name;
+    self.accountPhone.text = order.address.mobile;
+    self.accountAddress.text = order.address.address;
+    self.noteLabel.text = order.note;
 }
-
 
 @end

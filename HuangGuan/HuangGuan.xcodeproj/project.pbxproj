@@ -51,8 +51,20 @@
 		A2BE2C752312AB4500A770A0 /* HGOrderDetailFirstTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BE2C732312AB4500A770A0 /* HGOrderDetailFirstTwoCell.xib */; };
 		A2BE2C792312AC1B00A770A0 /* HGOrderDetailSecondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE2C772312AC1B00A770A0 /* HGOrderDetailSecondCell.m */; };
 		A2BE2C7A2312AC1B00A770A0 /* HGOrderDetailSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BE2C782312AC1B00A770A0 /* HGOrderDetailSecondCell.xib */; };
-		A2BE2C7E2312ADC800A770A0 /* HGOrderDetailThirdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE2C7C2312ADC800A770A0 /* HGOrderDetailThirdCell.m */; };
-		A2BE2C7F2312ADC800A770A0 /* HGOrderDetailThirdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BE2C7D2312ADC800A770A0 /* HGOrderDetailThirdCell.xib */; };
+		A2BE2C7E2312ADC800A770A0 /* HGOrderDetailFinalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE2C7C2312ADC800A770A0 /* HGOrderDetailFinalCell.m */; };
+		A2BE2C7F2312ADC800A770A0 /* HGOrderDetailFinalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BE2C7D2312ADC800A770A0 /* HGOrderDetailFinalCell.xib */; };
+		A2BE2C8323137D7500A770A0 /* HGOrderDetailThridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE2C8123137D7500A770A0 /* HGOrderDetailThridCell.m */; };
+		A2BE2C8423137D7500A770A0 /* HGOrderDetailThridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BE2C8223137D7500A770A0 /* HGOrderDetailThridCell.xib */; };
+		A2BE2C8823137F0B00A770A0 /* HGOrderDetailFourthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE2C8623137F0B00A770A0 /* HGOrderDetailFourthCell.m */; };
+		A2BE2C8923137F0B00A770A0 /* HGOrderDetailFourthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BE2C8723137F0B00A770A0 /* HGOrderDetailFourthCell.xib */; };
+		A2BE2C8D23138ACC00A770A0 /* HGOrderDetailFifthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE2C8B23138ACC00A770A0 /* HGOrderDetailFifthCell.m */; };
+		A2BE2C8E23138ACC00A770A0 /* HGOrderDetailFifthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BE2C8C23138ACC00A770A0 /* HGOrderDetailFifthCell.xib */; };
+		A2BE2C962313AB3300A770A0 /* OrderListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE2C912313AB3300A770A0 /* OrderListTableViewController.m */; };
+		A2BE2C972313AB3300A770A0 /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BE2C942313AB3300A770A0 /* OrderListTableViewCell.xib */; };
+		A2BE2C982313AB3300A770A0 /* OrderListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE2C952313AB3300A770A0 /* OrderListTableViewCell.m */; };
+		A2BE2C9C2313ABC200A770A0 /* OrderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE2C9A2313ABC200A770A0 /* OrderCollectionViewCell.m */; };
+		A2BE2C9D2313ABC200A770A0 /* OrderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BE2C9B2313ABC200A770A0 /* OrderCollectionViewCell.xib */; };
+		A2BE2CA02313C12E00A770A0 /* UITextView+YLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE2C9F2313C12E00A770A0 /* UITextView+YLTextView.m */; };
 		A2DA039E230B8EB300491721 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA039D230B8EB300491721 /* AppDelegate.m */; };
 		A2DA03A1230B8EB300491721 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03A0230B8EB300491721 /* ViewController.m */; };
 		A2DA03A4230B8EB300491721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA03A2230B8EB300491721 /* Main.storyboard */; };
@@ -63,7 +75,6 @@
 		A2DA03C0230B97E300491721 /* HGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03BF230B97E300491721 /* HGTabBarController.m */; };
 		A2DA03CA230B9FDB00491721 /* HGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03C9230B9FDB00491721 /* HGBaseViewController.m */; };
 		A2DA03CE230BA1F700491721 /* HGMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03CD230BA1F700491721 /* HGMineViewController.m */; };
-		A2DA03D1230BA20100491721 /* HGOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03D0230BA20100491721 /* HGOrdersViewController.m */; };
 		A2DA03D7230BA21500491721 /* HGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03D6230BA21500491721 /* HGMainViewController.m */; };
 		A2DA03DA230BCD4500491721 /* UIImage+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03D9230BCD4500491721 /* UIImage+GradientColor.m */; };
 		A2DA03DD230BE9EA00491721 /* HGMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DA03DC230BE9EA00491721 /* HGMineCell.m */; };
@@ -170,9 +181,28 @@
 		A2BE2C762312AC1B00A770A0 /* HGOrderDetailSecondCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGOrderDetailSecondCell.h; sourceTree = "<group>"; };
 		A2BE2C772312AC1B00A770A0 /* HGOrderDetailSecondCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGOrderDetailSecondCell.m; sourceTree = "<group>"; };
 		A2BE2C782312AC1B00A770A0 /* HGOrderDetailSecondCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGOrderDetailSecondCell.xib; sourceTree = "<group>"; };
-		A2BE2C7B2312ADC800A770A0 /* HGOrderDetailThirdCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGOrderDetailThirdCell.h; sourceTree = "<group>"; };
-		A2BE2C7C2312ADC800A770A0 /* HGOrderDetailThirdCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGOrderDetailThirdCell.m; sourceTree = "<group>"; };
-		A2BE2C7D2312ADC800A770A0 /* HGOrderDetailThirdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGOrderDetailThirdCell.xib; sourceTree = "<group>"; };
+		A2BE2C7B2312ADC800A770A0 /* HGOrderDetailFinalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGOrderDetailFinalCell.h; sourceTree = "<group>"; };
+		A2BE2C7C2312ADC800A770A0 /* HGOrderDetailFinalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGOrderDetailFinalCell.m; sourceTree = "<group>"; };
+		A2BE2C7D2312ADC800A770A0 /* HGOrderDetailFinalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGOrderDetailFinalCell.xib; sourceTree = "<group>"; };
+		A2BE2C8023137D7500A770A0 /* HGOrderDetailThridCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGOrderDetailThridCell.h; sourceTree = "<group>"; };
+		A2BE2C8123137D7500A770A0 /* HGOrderDetailThridCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGOrderDetailThridCell.m; sourceTree = "<group>"; };
+		A2BE2C8223137D7500A770A0 /* HGOrderDetailThridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGOrderDetailThridCell.xib; sourceTree = "<group>"; };
+		A2BE2C8523137F0B00A770A0 /* HGOrderDetailFourthCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGOrderDetailFourthCell.h; sourceTree = "<group>"; };
+		A2BE2C8623137F0B00A770A0 /* HGOrderDetailFourthCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGOrderDetailFourthCell.m; sourceTree = "<group>"; };
+		A2BE2C8723137F0B00A770A0 /* HGOrderDetailFourthCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGOrderDetailFourthCell.xib; sourceTree = "<group>"; };
+		A2BE2C8A23138ACC00A770A0 /* HGOrderDetailFifthCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGOrderDetailFifthCell.h; sourceTree = "<group>"; };
+		A2BE2C8B23138ACC00A770A0 /* HGOrderDetailFifthCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGOrderDetailFifthCell.m; sourceTree = "<group>"; };
+		A2BE2C8C23138ACC00A770A0 /* HGOrderDetailFifthCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HGOrderDetailFifthCell.xib; sourceTree = "<group>"; };
+		A2BE2C902313AB3300A770A0 /* OrderListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListTableViewController.h; sourceTree = "<group>"; };
+		A2BE2C912313AB3300A770A0 /* OrderListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListTableViewController.m; sourceTree = "<group>"; };
+		A2BE2C932313AB3300A770A0 /* OrderListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListTableViewCell.h; sourceTree = "<group>"; };
+		A2BE2C942313AB3300A770A0 /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
+		A2BE2C952313AB3300A770A0 /* OrderListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListTableViewCell.m; sourceTree = "<group>"; };
+		A2BE2C992313ABC200A770A0 /* OrderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCollectionViewCell.h; sourceTree = "<group>"; };
+		A2BE2C9A2313ABC200A770A0 /* OrderCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCollectionViewCell.m; sourceTree = "<group>"; };
+		A2BE2C9B2313ABC200A770A0 /* OrderCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCollectionViewCell.xib; sourceTree = "<group>"; };
+		A2BE2C9E2313C12E00A770A0 /* UITextView+YLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+YLTextView.h"; sourceTree = "<group>"; };
+		A2BE2C9F2313C12E00A770A0 /* UITextView+YLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+YLTextView.m"; sourceTree = "<group>"; };
 		A2DA0399230B8EB300491721 /* HuangGuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuangGuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA039C230B8EB300491721 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2DA039D230B8EB300491721 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -193,8 +223,6 @@
 		A2DA03CB230BA01900491721 /* HGConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGConst.h; sourceTree = "<group>"; };
 		A2DA03CC230BA1F700491721 /* HGMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMineViewController.h; sourceTree = "<group>"; };
 		A2DA03CD230BA1F700491721 /* HGMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMineViewController.m; sourceTree = "<group>"; };
-		A2DA03CF230BA20100491721 /* HGOrdersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGOrdersViewController.h; sourceTree = "<group>"; };
-		A2DA03D0230BA20100491721 /* HGOrdersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGOrdersViewController.m; sourceTree = "<group>"; };
 		A2DA03D5230BA21500491721 /* HGMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGMainViewController.h; sourceTree = "<group>"; };
 		A2DA03D6230BA21500491721 /* HGMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGMainViewController.m; sourceTree = "<group>"; };
 		A2DA03D8230BCD4500491721 /* UIImage+GradientColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GradientColor.h"; sourceTree = "<group>"; };
@@ -283,6 +311,28 @@
 				A2A1E5AB231248EC00AB85CA /* Order.m */,
 			);
 			path = Order;
+			sourceTree = "<group>";
+		};
+		A2BE2C8F2313AB3300A770A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A2BE2C902313AB3300A770A0 /* OrderListTableViewController.h */,
+				A2BE2C912313AB3300A770A0 /* OrderListTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A2BE2C922313AB3300A770A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2BE2C932313AB3300A770A0 /* OrderListTableViewCell.h */,
+				A2BE2C942313AB3300A770A0 /* OrderListTableViewCell.xib */,
+				A2BE2C952313AB3300A770A0 /* OrderListTableViewCell.m */,
+				A2BE2C992313ABC200A770A0 /* OrderCollectionViewCell.h */,
+				A2BE2C9A2313ABC200A770A0 /* OrderCollectionViewCell.m */,
+				A2BE2C9B2313ABC200A770A0 /* OrderCollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A2DA0390230B8EB300491721 = {
@@ -396,6 +446,8 @@
 				A2DA04312310ECCB00491721 /* FXCustomizeButton.m */,
 				A2DA043323110E5400491721 /* UIButton+HGCustomButton.h */,
 				A2DA043423110E5400491721 /* UIButton+HGCustomButton.m */,
+				A2BE2C9E2313C12E00A770A0 /* UITextView+YLTextView.h */,
+				A2BE2C9F2313C12E00A770A0 /* UITextView+YLTextView.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -490,9 +542,18 @@
 				A2BE2C762312AC1B00A770A0 /* HGOrderDetailSecondCell.h */,
 				A2BE2C772312AC1B00A770A0 /* HGOrderDetailSecondCell.m */,
 				A2BE2C782312AC1B00A770A0 /* HGOrderDetailSecondCell.xib */,
-				A2BE2C7B2312ADC800A770A0 /* HGOrderDetailThirdCell.h */,
-				A2BE2C7C2312ADC800A770A0 /* HGOrderDetailThirdCell.m */,
-				A2BE2C7D2312ADC800A770A0 /* HGOrderDetailThirdCell.xib */,
+				A2BE2C7B2312ADC800A770A0 /* HGOrderDetailFinalCell.h */,
+				A2BE2C7C2312ADC800A770A0 /* HGOrderDetailFinalCell.m */,
+				A2BE2C7D2312ADC800A770A0 /* HGOrderDetailFinalCell.xib */,
+				A2BE2C8023137D7500A770A0 /* HGOrderDetailThridCell.h */,
+				A2BE2C8123137D7500A770A0 /* HGOrderDetailThridCell.m */,
+				A2BE2C8223137D7500A770A0 /* HGOrderDetailThridCell.xib */,
+				A2BE2C8523137F0B00A770A0 /* HGOrderDetailFourthCell.h */,
+				A2BE2C8623137F0B00A770A0 /* HGOrderDetailFourthCell.m */,
+				A2BE2C8723137F0B00A770A0 /* HGOrderDetailFourthCell.xib */,
+				A2BE2C8A23138ACC00A770A0 /* HGOrderDetailFifthCell.h */,
+				A2BE2C8B23138ACC00A770A0 /* HGOrderDetailFifthCell.m */,
+				A2BE2C8C23138ACC00A770A0 /* HGOrderDetailFifthCell.xib */,
 			);
 			path = ShoppingCart;
 			sourceTree = "<group>";
@@ -500,8 +561,8 @@
 		A2DA03C3230B982300491721 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
-				A2DA03CF230BA20100491721 /* HGOrdersViewController.h */,
-				A2DA03D0230BA20100491721 /* HGOrdersViewController.m */,
+				A2BE2C8F2313AB3300A770A0 /* Controller */,
+				A2BE2C922313AB3300A770A0 /* View */,
 			);
 			path = Orders;
 			sourceTree = "<group>";
@@ -642,10 +703,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2BE2C8E23138ACC00A770A0 /* HGOrderDetailFifthCell.xib in Resources */,
 				A2A1E583231141DA00AB85CA /* HGItemCell.xib in Resources */,
 				A2DA043A2311234C00491721 /* HGMainTableViewCell.xib in Resources */,
+				A2BE2C8923137F0B00A770A0 /* HGOrderDetailFourthCell.xib in Resources */,
 				A2A1E5B72312674B00AB85CA /* HGShopCartCell.xib in Resources */,
 				A2A1E5B223125F4C00AB85CA /* HGShoppingCartViewController.xib in Resources */,
+				A2BE2C972313AB3300A770A0 /* OrderListTableViewCell.xib in Resources */,
 				A2DA03FB230CD8B300491721 /* HGMinePersonalInfo.storyboard in Resources */,
 				A2BE2C5E2312982900A770A0 /* HGConfirmOrderThirdTwoCell.xib in Resources */,
 				A2DA0426230D366F00491721 /* AddressTableViewCell.xib in Resources */,
@@ -653,10 +717,12 @@
 				A2DA041B230D2A3A00491721 /* MBProgressHUD.bundle in Resources */,
 				A2BE2C51231297E800A770A0 /* HGConfirmOrderSecondCell.xib in Resources */,
 				A2A1E59023114FAE00AB85CA /* HGDeitalFirstCell.xib in Resources */,
+				A2BE2C9D2313ABC200A770A0 /* OrderCollectionViewCell.xib in Resources */,
 				A2A1E59F23122DE700AB85CA /* HGDetailThirdCell.xib in Resources */,
 				A2A1E59A23122D6400AB85CA /* HGDetailSecondSecondCell.xib in Resources */,
 				A2DA03A9230B8EB500491721 /* LaunchScreen.storyboard in Resources */,
 				A2BE2C752312AB4500A770A0 /* HGOrderDetailFirstTwoCell.xib in Resources */,
+				A2BE2C8423137D7500A770A0 /* HGOrderDetailThridCell.xib in Resources */,
 				A2A1E5952311509300AB85CA /* HGDetailSecondCell.xib in Resources */,
 				A2BE2C7A2312AC1B00A770A0 /* HGOrderDetailSecondCell.xib in Resources */,
 				A2DA03DF230BF1E400491721 /* MineCell.plist in Resources */,
@@ -668,7 +734,7 @@
 				A2DA03A6230B8EB500491721 /* Assets.xcassets in Resources */,
 				A2BE2C592312981900A770A0 /* HGConfirmOrderThirdOneCell.xib in Resources */,
 				A2BE2C632312983C00A770A0 /* HGConfirmOrderThirdThreeCell.xib in Resources */,
-				A2BE2C7F2312ADC800A770A0 /* HGOrderDetailThirdCell.xib in Resources */,
+				A2BE2C7F2312ADC800A770A0 /* HGOrderDetailFinalCell.xib in Resources */,
 				A2BE2C682312985200A770A0 /* HGConfirmOrderFourthCell.xib in Resources */,
 				A2BE2C702312AAC900A770A0 /* HGOrderDetailFirstOneCell.xib in Resources */,
 				A2DA03A4230B8EB300491721 /* Main.storyboard in Resources */,
@@ -711,7 +777,6 @@
 				A2DA041E230D319400491721 /* JHUserDefaults.m in Sources */,
 				A2A1E58F23114FAE00AB85CA /* HGDeitalFirstCell.m in Sources */,
 				A2DA03DA230BCD4500491721 /* UIImage+GradientColor.m in Sources */,
-				A2DA03D1230BA20100491721 /* HGOrdersViewController.m in Sources */,
 				A2DA0401230CF36700491721 /* HGMineAddressTableViewController.m in Sources */,
 				A2DA03A1230B8EB300491721 /* ViewController.m in Sources */,
 				A2A1E5B123125F4C00AB85CA /* HGShoppingCartViewController.m in Sources */,
@@ -721,10 +786,14 @@
 				A2DA03FE230CF2AA00491721 /* CustomizeEmptyView.m in Sources */,
 				A2DA0419230D2A3A00491721 /* MBProgressHUD.m in Sources */,
 				A2DA0405230CF5FF00491721 /* UIBarButtonItem+CustomBarButtonItem.m in Sources */,
+				A2BE2C8323137D7500A770A0 /* HGOrderDetailThridCell.m in Sources */,
+				A2BE2C982313AB3300A770A0 /* OrderListTableViewCell.m in Sources */,
 				A2DA03E5230BF77A00491721 /* HGFeedBackViewController.m in Sources */,
 				A2A1E5942311509300AB85CA /* HGDetailSecondCell.m in Sources */,
 				A2A1E59E23122DE700AB85CA /* HGDetailThirdCell.m in Sources */,
 				A2DA03C0230B97E300491721 /* HGTabBarController.m in Sources */,
+				A2BE2C8D23138ACC00A770A0 /* HGOrderDetailFifthCell.m in Sources */,
+				A2BE2C962313AB3300A770A0 /* OrderListTableViewController.m in Sources */,
 				A2A1E5B62312674B00AB85CA /* HGShopCartCell.m in Sources */,
 				A2A1E5A22312418100AB85CA /* HGShopCarModel.m in Sources */,
 				A2A1E5BB23128DDB00AB85CA /* HGConfirmOrderViewController.m in Sources */,
@@ -733,8 +802,10 @@
 				A2DA03AC230B8EB600491721 /* main.m in Sources */,
 				A2DA03BD230B97C900491721 /* HGNavigationController.m in Sources */,
 				A2DA040C230D138200491721 /* HGMineEditAddressTableViewController.m in Sources */,
+				A2BE2C9C2313ABC200A770A0 /* OrderCollectionViewCell.m in Sources */,
 				A2DA03DD230BE9EA00491721 /* HGMineCell.m in Sources */,
 				A2DA03D7230BA21500491721 /* HGMainViewController.m in Sources */,
+				A2BE2CA02313C12E00A770A0 /* UITextView+YLTextView.m in Sources */,
 				A2DA0412230D1BC700491721 /* HGAddressModel.m in Sources */,
 				A2BE2C622312983C00A770A0 /* HGConfirmOrderThirdThreeCell.m in Sources */,
 				A2A1E59923122D6400AB85CA /* HGDetailSecondSecondCell.m in Sources */,
@@ -748,8 +819,9 @@
 				A2BE2C742312AB4500A770A0 /* HGOrderDetailFirstTwoCell.m in Sources */,
 				A2DA042D230D4F9A00491721 /* HGLoginRegisterViewController.m in Sources */,
 				A2BE2C792312AC1B00A770A0 /* HGOrderDetailSecondCell.m in Sources */,
+				A2BE2C8823137F0B00A770A0 /* HGOrderDetailFourthCell.m in Sources */,
 				A2BE2C6F2312AAC900A770A0 /* HGOrderDetailFirstOneCell.m in Sources */,
-				A2BE2C7E2312ADC800A770A0 /* HGOrderDetailThirdCell.m in Sources */,
+				A2BE2C7E2312ADC800A770A0 /* HGOrderDetailFinalCell.m in Sources */,
 				A2DA041A230D2A3A00491721 /* MBProgressHUD+XMG.m in Sources */,
 				A2DA04392311234C00491721 /* HGMainTableViewCell.m in Sources */,
 				A2DA03CA230B9FDB00491721 /* HGBaseViewController.m in Sources */,

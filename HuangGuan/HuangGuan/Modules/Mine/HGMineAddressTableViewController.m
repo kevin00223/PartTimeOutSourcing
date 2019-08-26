@@ -47,10 +47,11 @@
 
 - (void)loadData {
     _dataArr = nil;
-    JHUserDefaults *userD = [JHUserDefaults shareInstance];
-    if ([userD.mobile isNotBlank]) {
-        _dataArr = [[HGAddressModel bg_findAll:@"addressDB"] mutableCopy];
-    }
+//    JHUserDefaults *userD = [JHUserDefaults shareInstance];
+//    if ([userD.mobile isNotBlank]) {
+//        _dataArr = [[HGAddressModel bg_findAll:@"addressDB"] mutableCopy];
+//    }
+    _dataArr = [[HGAddressModel bg_findAll:@"addressDB"] mutableCopy];
     [self.tableView reloadData];
 }
 
@@ -71,6 +72,18 @@
         [self.navigationController pushViewController:editAddressVC animated:YES];
     };
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (self.orgin == OrginOrder) {
+        if (self.block) {
+            self.block(_dataArr[indexPath.section]);
+        }
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

@@ -29,7 +29,7 @@
     
     UIViewController *vc1 = [self setupChildViewControllerWithControllerName:@"HGMainViewController" title:@"首页" imageName:@"main"];
     UIViewController *vc2 = [self setupChildViewControllerWithControllerName:@"HGShoppingCartViewController" title:@"购物车" imageName:@"shoppingCart"];
-    UIViewController *vc3 = [self setupChildViewControllerWithControllerName:@"HGOrdersViewController" title:@"订单" imageName:@"orders"];
+    UIViewController *vc3 = [self setupChildViewControllerWithControllerName:@"OrderListTableViewController" title:@"订单" imageName:@"orders"];
     UIViewController *vc4 = [self setupChildViewControllerWithControllerName:@"HGMineViewController" title:@"我的" imageName:@"mine"];
     
     self.viewControllers = @[vc1, vc2, vc3, vc4];

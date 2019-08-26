@@ -94,7 +94,7 @@
         [self toDoAnythingWithInternet:^{
             HGConfirmOrderViewController *vc = [[HGConfirmOrderViewController alloc]init];
             vc.orderData = order;
-//            confirmOrderVC.isFromShopCar = YES;
+            vc.isFromShopCar = YES;
             [self.navigationController pushViewController:vc animated:YES];
         } isShowHud:YES];
     }

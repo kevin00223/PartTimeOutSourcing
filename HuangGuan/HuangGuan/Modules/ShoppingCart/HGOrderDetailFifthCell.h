@@ -1,8 +1,8 @@
 //
-//  HGOrderDetailFirstOneCell.h
+//  HGOrderDetailFifthCell.h
 //  HuangGuan
 //
-//  Created by 李凯 on 2019/8/25.
+//  Created by 李凯 on 2019/8/26.
 //  Copyright © 2019 LK. All rights reserved.
 //
 
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HGOrderDetailFirstOneCell : UITableViewCell
+@interface HGOrderDetailFifthCell : UITableViewCell
 
 @property (nonatomic, strong) Order *order;
 

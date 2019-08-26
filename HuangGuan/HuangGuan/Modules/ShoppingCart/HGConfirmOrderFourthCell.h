@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^NoteBlock)(NSString *block);
+
 @interface HGConfirmOrderFourthCell : UITableViewCell
+
+@property (nonatomic, copy) NoteBlock block;
 
 @end
 

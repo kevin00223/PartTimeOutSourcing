@@ -8,6 +8,7 @@
 
 #import "HGLoginRegisterViewController.h"
 #import "HGAccountModel.h"
+#import "HGTabBarController.h"
 
 @interface HGLoginRegisterViewController ()
 
@@ -94,6 +95,11 @@
     } isShowHud:YES];
 }
 
+- (IBAction)backButtonClicked:(UIButton *)sender {
+    HGTabBarController *tabVC = (HGTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    tabVC.selectedIndex = 0;
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 @end

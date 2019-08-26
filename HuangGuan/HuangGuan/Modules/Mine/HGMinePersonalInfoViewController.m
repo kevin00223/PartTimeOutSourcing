@@ -8,7 +8,7 @@
 
 #import "HGMinePersonalInfoViewController.h"
 
-@interface HGMinePersonalInfoViewController ()
+@interface HGMinePersonalInfoViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImage;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
@@ -16,6 +16,7 @@
 
 @property (nonatomic, strong) UIButton *logoutButton;
 
+@property (nonatomic, strong) UIImagePickerController *imagePickerController;
 
 @end
 
@@ -43,6 +44,13 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return kScreenHeight - kStatusBarAndNavigationBarHeight - 44 - 210;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        [self setupImageByCamera];
+    }
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)confirmBtnClick {
@@ -73,6 +81,53 @@
         [_logoutButton addTarget:self action:@selector(logoutButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _logoutButton;
+}
+
+- (UIImagePickerController *)imagePickerController {
+    if (!_imagePickerController) {
+        _imagePickerController = [[UIImagePickerController alloc] init];
+        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+            self.imagePickerController.delegate = self;
+            self.imagePickerController.allowsEditing = NO;
+        }
+    }
+    return _imagePickerController;
+}
+
+- (void)setupImageByCamera {
+    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"请选择" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *cameraAction = [UIAlertAction actionWithTitle:@"相机" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+        [self presentViewController:self.imagePickerController animated:YES completion:nil];
+    }];
+    
+    UIAlertAction *photoLibraryAction = [UIAlertAction actionWithTitle:@"相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        [self presentViewController:self.imagePickerController animated:YES completion:nil];
+    }];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    
+    [alertC addAction:cameraAction];
+    [alertC addAction:photoLibraryAction];
+    [alertC addAction:cancelAction];
+    
+    [self presentViewController:alertC animated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    [self.avatarImage setImage:image];
+    NSData *data = UIImageJPEGRepresentation(image, 1.0f);
+    NSString *str = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    [[JHUserDefaults shareInstance] changeAvatar:str];
+    bg_executeSql([NSString stringWithFormat:@"update accountDB set BG_avatarIMG = '%@' where BG_mobile = '%@'",str,[JHUserDefaults shareInstance].mobile], nil, nil);
+    
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

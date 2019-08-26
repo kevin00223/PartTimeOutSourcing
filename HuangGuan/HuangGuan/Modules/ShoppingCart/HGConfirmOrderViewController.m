@@ -15,6 +15,9 @@
 #import "HGConfirmOrderThirdThreeCell.h"
 #import "HGConfirmOrderFourthCell.h"
 #import "OrderDetailTableViewController.h"
+#import "ShopCarDataTool.h"
+#import "HGMineAddressTableViewController.h"
+#import "HGAddressModel.h"
 
 @interface HGConfirmOrderViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -24,6 +27,8 @@
 
 @property (nonatomic, assign) CGFloat itemTotal;
 @property (nonatomic, assign) CGFloat deliveredTotal;
+
+@property (nonatomic, copy) NSString *noteStr;
 
 @end
 
@@ -57,20 +62,19 @@
 
 - (IBAction)congfirmButtonClicked:(UIButton *)sender {
     
-//    _orderData.note = self.noteStr;
-//    WeakSelf;
+    _orderData.note = self.noteStr;
+    
     [self toDoAnythingWithInternet:^{
         OrderDetailTableViewController *orderDetailVC = [[OrderDetailTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
-//        orderDetailVC.orderData = weakSelf.orderData;
+        orderDetailVC.orderData = self.orderData;
         [self.navigationController pushViewController:orderDetailVC animated:YES];
-//        weakSelf.orderData.bg_tableName = @"orderDB";
-//        [weakSelf.orderData bg_saveOrUpdate];
-//        [EBBannerView showWithContent:@"下单成功"];
-//        if (self.isFromShopCar) {
-//            for (ShopCarItem *item in weakSelf.orderData.itemArr) {
-//                [[ShopCarDataTool sharedManger] deteleRecord:item];
-//            }
-//        }
+        self.orderData.bg_tableName = @"orderDB";
+        [self.orderData bg_saveOrUpdate];
+        if (self.isFromShopCar) {
+            for (HGShopCarModel *item in self.orderData.itemArr) {
+                [[ShopCarDataTool sharedManger] deteleRecord:item];
+            }
+        }
     } isShowHud:YES];
 }
 
@@ -109,6 +113,7 @@
         case 0: {
             HGConfirmOrderFirstCell *firstCell = [[NSBundle mainBundle] loadNibNamed:@"HGConfirmOrderFirstCell" owner:self options:nil].firstObject;
             firstCell.orderData = self.orderData;
+            firstCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell = firstCell;
         }
             break;
@@ -139,13 +144,32 @@
         }
         case 3: {
             HGConfirmOrderFourthCell *fourthCell = [[NSBundle mainBundle] loadNibNamed:@"HGConfirmOrderFourthCell" owner:self options:nil].firstObject;
+            fourthCell.block = ^(NSString * _Nonnull block) {
+                self.noteStr = block;
+            };
             cell = fourthCell;
         }
             break;
         default:
             break;
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        HGConfirmOrderFirstCell *firstCell = [[NSBundle mainBundle] loadNibNamed:@"HGConfirmOrderFirstCell" owner:self options:nil].firstObject;
+        
+        HGMineAddressTableViewController *addressVC = [[HGMineAddressTableViewController alloc] init];
+        addressVC.orgin = OrginOrder;
+        addressVC.block = ^(HGAddressModel * _Nonnull address) {
+            self.orderData.address = address;
+            firstCell.orderData = self.orderData;
+        };
+        
+        [self.navigationController pushViewController:addressVC animated:YES];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

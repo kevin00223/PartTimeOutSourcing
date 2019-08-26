@@ -25,25 +25,29 @@
                         <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="说点你需要的..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mrd-P2-ue4">
-                        <rect key="frame" x="15" y="50" width="487" height="130"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g6p-tJ-xbE">
+                        <rect key="frame" x="15" y="45" width="507" height="130"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="130" id="e0t-SA-bRv"/>
+                            <constraint firstAttribute="height" constant="130" id="A50-4d-Ron"/>
                         </constraints>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="mrd-P2-ue4" firstAttribute="top" secondItem="M9r-k8-Ghl" secondAttribute="bottom" constant="20" id="BVv-l2-j1W"/>
-                    <constraint firstItem="mrd-P2-ue4" firstAttribute="leading" secondItem="M9r-k8-Ghl" secondAttribute="leading" id="NWL-Hn-5xx"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="mrd-P2-ue4" secondAttribute="trailing" constant="15" id="RwR-el-2Jx"/>
+                    <constraint firstAttribute="trailing" secondItem="g6p-tJ-xbE" secondAttribute="trailing" constant="15" id="7ac-7w-A55"/>
+                    <constraint firstItem="g6p-tJ-xbE" firstAttribute="leading" secondItem="M9r-k8-Ghl" secondAttribute="leading" id="Aho-lw-zs5"/>
                     <constraint firstItem="M9r-k8-Ghl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="WjR-Iv-Kv8"/>
+                    <constraint firstItem="g6p-tJ-xbE" firstAttribute="top" secondItem="M9r-k8-Ghl" secondAttribute="bottom" constant="15" id="fVB-zO-rnO"/>
                     <constraint firstItem="M9r-k8-Ghl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="sbq-hC-go7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="remarkTextView" destination="g6p-tJ-xbE" id="Bz0-5s-EOo"/>
+            </connections>
             <point key="canvasLocation" x="207.97101449275365" y="134.59821428571428"/>
         </tableViewCell>
     </objects>
