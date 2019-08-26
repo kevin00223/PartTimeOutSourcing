@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +15,62 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="舒适的用品" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmu-Fb-d1H">
+                                <rect key="frame" x="198.5" y="184" width="17" height="107.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="bpu-e7-O8D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.93333333333333335" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="舒适的生活" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhM-Hl-xke">
+                                <rect key="frame" x="198.5" y="321.5" width="17" height="107.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="Xcn-cF-AQF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmc-sb-PFz">
+                                <rect key="frame" x="187" y="689" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UZo-Ii-2SL"/>
+                                    <constraint firstAttribute="width" constant="40" id="kSx-39-90P"/>
+                                </constraints>
+                                <state key="normal" image="启动页icon"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="皇冠家纺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEG-Hw-2hd">
+                                <rect key="frame" x="176" y="754" width="62" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rmc-sb-PFz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6bS-Kr-v0h"/>
+                            <constraint firstItem="DEG-Hw-2hd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8ES-Xw-39H"/>
+                            <constraint firstItem="jmu-Fb-d1H" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Kdy-Xc-PRM"/>
+                            <constraint firstItem="jmu-Fb-d1H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="U0O-KW-sSj"/>
+                            <constraint firstItem="FhM-Hl-xke" firstAttribute="centerX" secondItem="jmu-Fb-d1H" secondAttribute="centerX" id="Zrk-fP-kzo"/>
+                            <constraint firstItem="rmc-sb-PFz" firstAttribute="top" secondItem="FhM-Hl-xke" secondAttribute="bottom" constant="260" id="ajx-x2-8Ah"/>
+                            <constraint firstItem="FhM-Hl-xke" firstAttribute="top" secondItem="jmu-Fb-d1H" secondAttribute="bottom" constant="30" id="uGx-kb-DbC"/>
+                            <constraint firstItem="DEG-Hw-2hd" firstAttribute="top" secondItem="rmc-sb-PFz" secondAttribute="bottom" constant="25" id="xHP-F2-nvF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="启动页icon" width="40" height="40"/>
+    </resources>
 </document>
