@@ -8,6 +8,7 @@
 
 #import "HGFeedBackViewController.h"
 #import "HGMineViewController.h"
+#import "HGTabBarController.h"
 
 @interface HGFeedBackViewController ()
 
@@ -62,6 +63,8 @@
             if ([vc isKindOfClass:[HGMineViewController class]]) {
                 [self.navigationController popToViewController:vc animated:YES];
             }
+            HGTabBarController *tabVC = (HGTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+            tabVC.selectedIndex = 0;
         }
         [MBProgressHUD showMessage:@"反馈已提交"];
     } isShowHud:YES];
