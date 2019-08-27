@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmc-sb-PFz">
-                                <rect key="frame" x="187" y="689" width="40" height="40"/>
+                                <rect key="frame" x="187" y="659" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="UZo-Ii-2SL"/>
                                     <constraint firstAttribute="width" constant="40" id="kSx-39-90P"/>
@@ -45,7 +45,7 @@
                                 <state key="normal" image="启动页icon"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="皇冠家纺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEG-Hw-2hd">
-                                <rect key="frame" x="176" y="754" width="62" height="18"/>
+                                <rect key="frame" x="176" y="724" width="62" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -58,7 +58,7 @@
                             <constraint firstItem="jmu-Fb-d1H" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Kdy-Xc-PRM"/>
                             <constraint firstItem="jmu-Fb-d1H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="U0O-KW-sSj"/>
                             <constraint firstItem="FhM-Hl-xke" firstAttribute="centerX" secondItem="jmu-Fb-d1H" secondAttribute="centerX" id="Zrk-fP-kzo"/>
-                            <constraint firstItem="rmc-sb-PFz" firstAttribute="top" secondItem="FhM-Hl-xke" secondAttribute="bottom" constant="260" id="ajx-x2-8Ah"/>
+                            <constraint firstItem="rmc-sb-PFz" firstAttribute="top" secondItem="FhM-Hl-xke" secondAttribute="bottom" constant="230" id="ajx-x2-8Ah"/>
                             <constraint firstItem="FhM-Hl-xke" firstAttribute="top" secondItem="jmu-Fb-d1H" secondAttribute="bottom" constant="30" id="uGx-kb-DbC"/>
                             <constraint firstItem="DEG-Hw-2hd" firstAttribute="top" secondItem="rmc-sb-PFz" secondAttribute="bottom" constant="25" id="xHP-F2-nvF"/>
                         </constraints>

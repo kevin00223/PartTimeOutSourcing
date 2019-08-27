@@ -9,6 +9,7 @@
 #import "HGLoginRegisterViewController.h"
 #import "HGAccountModel.h"
 #import "HGTabBarController.h"
+#import "HGAddressModel.h"
 
 @interface HGLoginRegisterViewController ()
 
@@ -28,6 +29,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.loginPhoneTextField.keyboardType = UIKeyboardTypeNumberPad;
+    self.registerPhoneTextField.keyboardType = UIKeyboardTypeNumberPad;
+    
+    self.loginPsdTextField.secureTextEntry = YES;
+    self.registerPsdTextField.secureTextEntry = YES;
+    self.registerAgainPsdTextField.secureTextEntry = YES;
 }
 
 - (IBAction)loginButtonClicked:(UIButton *)sender {
@@ -45,6 +52,10 @@
     }
     
     HGAccountModel *account = arr.firstObject;
+    
+    if (![account.mobile isEqualToString:@"15101070703"]) {
+        [HGAddressModel bg_drop:@"addressDB"];
+    }
     
     
 //    WeakSelf;
@@ -92,6 +103,7 @@
         account.bg_tableName = @"accountDB";
         [account bg_save];
         [MBProgressHUD showSuccess:@"注册成功"];
+        [self dismissViewControllerAnimated:YES completion:nil];
     } isShowHud:YES];
 }
 

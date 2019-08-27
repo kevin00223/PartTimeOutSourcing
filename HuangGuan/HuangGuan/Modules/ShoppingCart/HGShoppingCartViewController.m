@@ -52,7 +52,9 @@
 - (void)loadData {
     _shopCarArr = [[ShopCarDataTool sharedManger] queryShopCar];
     _selectArr = [[ShopCarDataTool sharedManger] querySelectItem];
-    if (_selectArr.count == _shopCarArr.count) {
+    if (_shopCarArr.count == 0) {
+        _allSelectButton.selected = NO;
+    }else if (_selectArr.count == _shopCarArr.count) {
         _allSelectButton.selected = YES;
     } else {
         _allSelectButton.selected = NO;
@@ -65,6 +67,9 @@
     if (self.selectArr.count != self.shopCarArr.count) {
         [self.selectArr removeAllObjects];
         [self.selectArr addObjectsFromArray:self.shopCarArr];
+        [self.selectArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            ((HGShopCarModel *)obj).isSelect = YES;
+        }];
     } else {
         
         [self.shopCarArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {

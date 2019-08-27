@@ -34,7 +34,7 @@
     self.nameTextField.text = [JHUserDefaults shareInstance].name;
     self.phoneTextField.text = [JHUserDefaults shareInstance].mobile;
     NSString *avatarStr = [JHUserDefaults shareInstance].avatarUrl;
-    self.avatarImage.image = [avatarStr isNotBlank] ? [UIImage imageNamed:avatarStr] : [UIImage imageNamed:@"personalInfoIcon"];
+    self.avatarImage.image = [avatarStr isNotBlank] ? [self convertStringToUIImage:avatarStr] : [UIImage imageNamed:@"mine_default_icon"];
     
     UIBarButtonItem *confirmBtn = [UIBarButtonItem itemWithTitle:@"确定" Image:nil target:self action:@selector(confirmBtnClick)];
     self.navigationItem.rightBarButtonItem = confirmBtn;
@@ -43,7 +43,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return kScreenHeight - kStatusBarAndNavigationBarHeight - 44 - 210;
+    return kScreenHeight - kStatusBarAndNavigationBarHeight - 68 - 210;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -54,6 +54,16 @@
 }
 
 - (void)confirmBtnClick {
+    if (![self.nameTextField.text isNotBlank]) {
+        [MBProgressHUD showError:@"姓名不能为空"];
+        return;
+    }
+    
+    if (![self.phoneTextField.text isNotBlank]) {
+        [MBProgressHUD showError:@"联系方式不能为空"];
+        return;
+    }
+    
     [self toDoAnythingWithInternet:^{
         bg_executeSql([NSString stringWithFormat:@"update accountDB set BG_mobile = '%@', BG_name = '%@' where BG_mobile = '%@'",self.phoneTextField.text,self.nameTextField.text,[JHUserDefaults shareInstance].mobile], nil, nil);
         [[JHUserDefaults shareInstance] updateMember:self.nameTextField.text];
@@ -61,6 +71,13 @@
         [self.navigationController popViewControllerAnimated:YES];
         [MBProgressHUD showSuccess:@"修改成功"];
     } isShowHud:YES];
+}
+
+- (UIImage *)convertStringToUIImage:(NSString *) imageString {
+    NSData * decodedImageData = [[NSData alloc]
+                                 initWithBase64EncodedString:imageString options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    UIImage *_decodedImage = [UIImage imageWithData:decodedImageData];
+    return _decodedImage;
 }
 
 - (void)logoutButtonClicked: (UIButton *)button {

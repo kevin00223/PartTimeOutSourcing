@@ -64,6 +64,11 @@
     
     _orderData.note = self.noteStr;
     
+    if (![_orderData.address.address isNotBlank]) {
+        [MBProgressHUD showError:@"请选择地址"];
+        return;
+    }
+    
     [self toDoAnythingWithInternet:^{
         OrderDetailTableViewController *orderDetailVC = [[OrderDetailTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
         orderDetailVC.orderData = self.orderData;
@@ -166,6 +171,7 @@
         addressVC.block = ^(HGAddressModel * _Nonnull address) {
             self.orderData.address = address;
             firstCell.orderData = self.orderData;
+            [tableView reloadRow:0 inSection:0 withRowAnimation:UITableViewRowAnimationNone];
         };
         
         [self.navigationController pushViewController:addressVC animated:YES];

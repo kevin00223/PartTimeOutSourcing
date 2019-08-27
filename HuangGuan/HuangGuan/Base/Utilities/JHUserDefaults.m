@@ -7,6 +7,7 @@
 //
 
 #import "JHUserDefaults.h"
+#import "HGAddressModel.h"
 
 static JHUserDefaults *instance = nil;
 
@@ -120,7 +121,9 @@ NSString *const userDefaultAuthoritiesKey = @"authorities";
     [self removeObjectForKey:userDefaultAccessTokenKey];
     [self removeObjectForKey:userDefaultRefreshTokenKey];
     [self removeObjectForKey:userDefaultAuthoritiesKey];
-
+    
+    [HGAddressModel bg_drop:@"addressDB"];
+    [HGAddressModel bg_drop:@"orderDB"];
 }
 
 

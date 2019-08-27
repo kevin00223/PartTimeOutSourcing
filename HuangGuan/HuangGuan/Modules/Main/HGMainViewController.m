@@ -13,6 +13,7 @@
 #import "HGItemListTableViewController.h"
 #import "HGItemModel.h"
 #import "HGItemDetailsTableViewController.h"
+#import <MJRefresh/MJRefresh.h>
 
 @interface HGMainViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -50,6 +51,10 @@
     [self.topContainerView addSubview:self.promotionView];
     [self.promotionView addSubview:self.promotionImage];
     [self.promotionView addSubview:self.promotionLabel];
+    
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self loadData];
+    }];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -65,6 +70,7 @@
     
     [self.topImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.equalTo(self.topBackgroundView).offset(5);
+        make.right.equalTo(self.topBackgroundView).offset(-5);
     }];
     
     [self.buttonsBackgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -96,6 +102,16 @@
     vc.title = self.titleArray[button.tag];
     vc.data = self.itemListArray[button.tag];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)loadData {
+    __weak typeof(self) weakSelf = self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        //刷新列表
+        [weakSelf.tableView reloadData];
+        //拿到当前的刷新控件，结束刷新状态
+        [weakSelf.tableView.mj_header endRefreshing];
+    });
 }
 
 #pragma mark - tableview

@@ -50,20 +50,18 @@ static NSString *mineCellID = @"mineCell";
     self.subTitleLabel.text = [JHUserDefaults shareInstance].mobile;
     NSString *avatarStr = [JHUserDefaults shareInstance].avatarUrl;
     
-    self.topIcon.image = [avatarStr isNotBlank] ? [UIImage imageNamed:avatarStr] :
+    self.topIcon.image = [avatarStr isNotBlank] ? [self convertStringToUIImage:avatarStr] :
     [UIImage imageNamed:@"mine_default_icon"];
     [self.editButton setHidden: ![self.titleLabel.text isNotBlank]];
     [self.loginButton setHidden:[self.titleLabel.text isNotBlank]];
 }
 
-//- (UIImage *)convertStringToUIImage:(NSString *) imageString {
-//    NSData *data = [imageString dataUsingEncoding:NSUTF8StringEncoding];
-//    NSString *encodedString = [data base64EncodedStringWithOptions:0];
-//    NSData * decodedImageData = [[NSData alloc]
-//                                 initWithBase64EncodedString:encodedString options:NSDataBase64DecodingIgnoreUnknownCharacters];
-//    UIImage *_decodedImage = [UIImage imageWithData:decodedImageData];
-//    return _decodedImage;
-//}
+- (UIImage *)convertStringToUIImage:(NSString *) imageString {
+    NSData * decodedImageData = [[NSData alloc]
+                                 initWithBase64EncodedString:imageString options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    UIImage *_decodedImage = [UIImage imageWithData:decodedImageData];
+    return _decodedImage;
+}
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
@@ -160,6 +158,7 @@ static NSString *mineCellID = @"mineCell";
                 // 反馈
                 if ([userD.mobile isNotBlank]) {
                     [self.navigationController pushViewController:[HGFeedBackViewController new] animated:YES];
+//                    [self presentViewController:[HGFeedBackViewController new] animated:YES completion:nil];
                 }else{
                     [self loginRequest];
                 }
@@ -167,9 +166,6 @@ static NSString *mineCellID = @"mineCell";
             }
                 break;
             case 2:
-                [MBProgressHUD showMessage:@"当前为最新版本"];
-                break;
-            case 3:
                 [MBProgressHUD showMessage:@"清除成功"];
                 break;
             default:

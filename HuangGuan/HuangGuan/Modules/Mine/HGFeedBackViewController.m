@@ -59,13 +59,14 @@
 
 - (void)confirmButtonClicked: (UIButton *)confirmButton {
     [self toDoAnythingWithInternet:^{
-        for (UIViewController *vc in self.navigationController.childViewControllers) {
-            if ([vc isKindOfClass:[HGMineViewController class]]) {
-                [self.navigationController popToViewController:vc animated:YES];
-            }
-            HGTabBarController *tabVC = (HGTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-            tabVC.selectedIndex = 0;
-        }
+//        for (UIViewController *vc in self.navigationController.childViewControllers) {
+//            if ([vc isKindOfClass:[HGMineViewController class]]) {
+//                [self.navigationController popToViewController:vc animated:YES];
+//            }
+//            HGTabBarController *tabVC = (HGTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+//            tabVC.selectedIndex = 0;
+//        }
+        [self.navigationController popToRootViewControllerAnimated:YES];
         [MBProgressHUD showMessage:@"反馈已提交"];
     } isShowHud:YES];
 }
@@ -80,13 +81,9 @@
         _textView.backgroundColor = [UIColor whiteColor];
         _textView.textColor = HGHexColor(0x959595);
         _textView.font = [UIFont systemFontOfSize:14];
-        UILabel *placeHolderLabel = [[UILabel alloc] init];
-        placeHolderLabel.text = @"请输入您的意见反馈";
-        placeHolderLabel.textColor = HGHexColor(0x959595);
-        placeHolderLabel.font = [UIFont systemFontOfSize:14];
-        [placeHolderLabel sizeToFit];
-        [_textView addSubview:placeHolderLabel];
-        [_textView setValue:placeHolderLabel forKey:@"_placeholderLabel"];
+        _textView.placeholder = @"请输入您的意见反馈";
+        _textView.placeholdColor = UIColorHex(#989898);
+        _textView.placeholdFont = [UIFont systemFontOfSize:12];
     }
     return _textView;
 }

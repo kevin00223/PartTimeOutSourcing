@@ -16,12 +16,6 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>版本更新</string>
-		<key>iconImage</key>
-		<string>mine_update</string>
-	</dict>
-	<dict>
-		<key>title</key>
 		<string>清除缓存</string>
 		<key>iconImage</key>
 		<string>mine_cache</string>

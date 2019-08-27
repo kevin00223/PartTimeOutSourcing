@@ -9,6 +9,7 @@ PODS:
   - LYEmptyView (1.2.3)
   - Masonry (1.1.0)
   - MJExtension (3.0.17)
+  - MJRefresh (3.2.0)
   - WHCNetWorkKit (0.0.3):
     - WHCNetWorkKit/NSURLConnection (= 0.0.3)
     - WHCNetWorkKit/NSURLSession (= 0.0.3)
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - LYEmptyView
   - Masonry
   - MJExtension
+  - MJRefresh
   - WHCNetWorkKit
   - YYKit
 
@@ -43,6 +45,7 @@ SPEC REPOS:
     - LYEmptyView
     - Masonry
     - MJExtension
+    - MJRefresh
     - WHCNetWorkKit
     - YYKit
 
@@ -52,9 +55,10 @@ SPEC CHECKSUMS:
   LYEmptyView: ea5827f3f81fcbec427f990005501991477bdae8
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   WHCNetWorkKit: 169c27c8b8008e8f8d679277929777083a2379b9
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: daa6c63c6bbf25f79c84f939a87789140ea8c024
+PODFILE CHECKSUM: 2b301e00dc08dc5c482c95f993c3024e915be950
 
 COCOAPODS: 1.7.4

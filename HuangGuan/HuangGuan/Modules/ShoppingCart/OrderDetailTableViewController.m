@@ -25,7 +25,7 @@
     self.title = @"下单成功";
     
     UIBarButtonItem *confirmBtn = [UIBarButtonItem itemWithTitle:nil Image:@"back" target:self action:@selector(backBtnClick)];
-    self.navigationItem.leftBarButtonItem = confirmBtn;
+    self.navigationItem.backBarButtonItem = confirmBtn;
 }
 
 - (void)backBtnClick {

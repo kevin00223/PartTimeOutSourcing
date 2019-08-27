@@ -32,9 +32,18 @@
 
 - (void)setOrderData:(Order *)orderData {
     _orderData = orderData;
-    self.accountName.text = orderData.address.name;
-    self.accountPhone.text = orderData.address.mobile;
-    self.accountAddress.text = orderData.address.address;
+    if (![orderData.address.name isNotBlank]) {
+        self.accountName.text = @"请选择配送地址";
+        [self.accountPhone setHidden:YES];
+        [self.accountAddress setHidden:YES];
+    }else{
+        [self.accountPhone setHidden:NO];
+        [self.accountAddress setHidden:NO];
+        
+        self.accountName.text = orderData.address.name;
+        self.accountPhone.text = orderData.address.mobile;
+        self.accountAddress.text = orderData.address.address;
+    }
 }
 
 

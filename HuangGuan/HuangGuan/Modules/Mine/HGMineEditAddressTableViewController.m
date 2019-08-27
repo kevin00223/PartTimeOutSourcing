@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *addressTextField;
 @property (weak, nonatomic) IBOutlet UISwitch *defaultSwitch;
 
+@property (nonatomic, strong) UIButton *saveButton;
+
 @end
 
 @implementation HGMineEditAddressTableViewController
@@ -34,12 +36,18 @@
     }
     
     self.tableView.estimatedSectionFooterHeight = 1;
-    UIButton *saveButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    saveButton.frame = CGRectMake(0, 0, kScreenWidth, 44);
-    [saveButton setTitle:@"保存" forState:UIControlStateNormal];
-    saveButton.backgroundColor = HGHexColor(0xEB5266);
-    [saveButton addTarget:self action:@selector(saveButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    self.tableView.tableFooterView = saveButton;
+    
+    [[UIApplication sharedApplication].keyWindow addSubview:self.saveButton];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.saveButton setHidden:NO];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.saveButton setHidden:YES];
 }
 
 - (void)deleteBtnClick {
@@ -86,16 +94,19 @@
 
 #pragma mark - tableview
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    if (section == 0) {
-        return 14;
-    } else {
-        return kScreenHeight - kStatusBarAndNavigationBarHeight - 240 - 14 - 44;
-    }
-}
-
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return CGFLOAT_MIN;
+}
+
+- (UIButton *)saveButton {
+    if (!_saveButton) {
+        _saveButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _saveButton.frame = CGRectMake(0, kScreenHeight-44, kScreenWidth, 44);
+        [_saveButton setTitle:@"保存" forState:UIControlStateNormal];
+        _saveButton.backgroundColor = HGHexColor(0xEB5266);
+        [_saveButton addTarget:self action:@selector(saveButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _saveButton;
 }
 
 

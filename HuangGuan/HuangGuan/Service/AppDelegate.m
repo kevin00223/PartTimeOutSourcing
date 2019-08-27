@@ -49,7 +49,7 @@
     account.name = @"SYangN花卷";
     account.mobile = @"15101070703";
     account.password = @"123456";
-    account.avatarImg = @"mine_icon";
+//    account.avatarImg = @"mine_icon";
     [account bg_saveOrUpdate];
     
     HGAddressModel *address = [[HGAddressModel alloc] init];
